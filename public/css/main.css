@@ -1,0 +1,15 @@
+@import "./reset.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+:root {
+    --darkBlue: 1F1E30;
+    --white: FFFFFF;
+    --purple: 5140A5;
+    --gray: 898C99;
+    --yellow: F0C340;
+    --red: AF4747;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
