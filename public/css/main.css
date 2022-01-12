@@ -12,6 +12,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     background:
         url(../img/home-page-img-dark.svg)
         center right -10% / 110vh
@@ -22,3 +23,98 @@ html {
     width: 100vw;
     height: 100vh;
 }
+body {
+    padding: 2rem;
+}
+
+/*HOME PAGE - HEADER*/
+
+.header_home-page {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+.logo_name-txt {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.header_right-section {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    display: inline-block;
+    height: 1.2rem;
+    position: relative;
+    width: 3rem;
+    margin-right: 1.5rem;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    background-color: rgba(81, 64, 165, 0.7);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    bottom: -.15rem;
+    content: "";
+    height: 1.5rem;
+    left: 0;
+    position: absolute;
+    transition: .4s;
+    width: 1.5rem;
+}
+
+input:checked + .slider {
+    background-color: var(--purple);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: var(--white);
+    box-shadow:0px 0px 0px 2px var(--purple) inset;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    background-color: var(--purple);
+}
+
+.btn_sign-up {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-left: 1rem;
+}
+
+
+
+
