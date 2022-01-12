@@ -2,12 +2,15 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 :root {
+    /*DARK MODE*/
     --dark-blue: #1F1E30;
     --white: #FFFFFF;
     --purple: #5140A5;
     --gray: #898C99;
     --yellow: #F0C340;
     --red: #AF4747;
+
+    /*LIGHT MODE*/
 }
 
 html {
@@ -24,7 +27,7 @@ html {
     height: 100vh;
 }
 body {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 /*HOME PAGE - HEADER*/
@@ -51,7 +54,7 @@ body {
     font-size: 1.3rem;
 }
 
-.header_right-section {
+.header_home-page-right-section {
     display: flex;
     align-items: center;
 }
@@ -115,6 +118,93 @@ input:checked + .slider:before {
     margin-left: 1rem;
 }
 
+/*HOME PAGE - MAIN*/
+.main_home-page {
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+}
 
+.title_home-page {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.main_home-page-container-center {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.main_home-page-container-center-stats {
+    margin-right: 3rem;
+    width: 30%;
+}
+
+.main_home-page-container-center-channels {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 5% 55% 5% 8% 20%;
+    grid-template-rows: 2rem 2rem 2rem;
+    gap: 5% 2%;
+}
+
+.grip_no {
+    height: 2rem;
+}
+
+.grip_count-users {
+    color: var(--purple);
+    margin: auto;
+    width: 50%;
+}
+.grip_icons {
+    color: var(--purple);
+    margin: auto;
+    width: 50%;
+}
+.grip_btn-join {
+    font-size: .6rem;
+    background-color: var(--purple);
+    border-radius: .5rem;
+}
+
+.top_channels {
+    margin-bottom: 1rem;
+}
+
+.main_home-page-container-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.main_home-page-container-bottom-btn {
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--purple);
+}
+
+/*HOME PAGE - FOOTER*/
+.footer_home-page {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-txt {
+    font-size: .8rem;
+    color: var(--gray);
+}
 
 
