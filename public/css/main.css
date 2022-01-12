@@ -2,14 +2,23 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 :root {
-    --darkBlue: 1F1E30;
-    --white: FFFFFF;
-    --purple: 5140A5;
-    --gray: 898C99;
-    --yellow: F0C340;
-    --red: AF4747;
+    --dark-blue: #1F1E30;
+    --white: #FFFFFF;
+    --purple: #5140A5;
+    --gray: #898C99;
+    --yellow: #F0C340;
+    --red: #AF4747;
 }
 
-body {
+html {
     font-family: 'Roboto', sans-serif;
+    background:
+        url(../img/home-page-img-dark.svg)
+        center right -10% / 110vh
+        no-repeat
+        fixed
+        var(--dark-blue);
+    color: var(--white);
+    width: 100vw;
+    height: 100vh;
 }
