@@ -142,14 +142,14 @@ input:checked + .slider:before {
 }
 
 .home-page-container-center-stats {
-    margin-right: 2rem;
+    margin-right: 2.5rem;
     padding:1rem;
     border-radius: .5rem;
-    width: 30%;
+    width: 20%;
     background: rgb(81,64,165);
     background: linear-gradient(120deg, rgba(81,64,165,0.22) 0%, rgba(81,64,165,0) 100%);
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 80% 20%;
     grid-template-rows: 1.5rem 1.5rem;
     gap: 1% 1%;
 }
