@@ -13,56 +13,69 @@
 </head>
 <body>
 <header class="header_home-page">
-    <button class="logo">
+    <a href="/">
+        <button class="logo" title="Chatter">
         <img class="logo_img" src="./img/sygnet.svg" alt="Sygnet">
         <p class="logo_name-txt">Chatter</p>
-    </button>
+        </button>
+    </a>
     <div class="header_home-page-right-section">
         <label class="switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
         </label>
-        <button class="btn">Sign in</button>
-        <button class="btn_sign-up">Sign up</button>
+        <a href="/login">
+            <button title="Sign in">Sign in</button>
+        </a>
+        <a href="/register">
+            <button class="btn_sign-up" title="Sign up">Sign up</button>
+        </a>
     </div>
 </header>
 
 <main class="main_home-page">
     <h1 class="title_home-page">Online Chat</h1>
-    <div class="main_home-page-container-center">
-        <div class="main_home-page-container-center-stats">
-            <p>Users: 144</p>
-            <p>Channels: 18</p>
+    <div class="home-page-container-center">
+        <div class="home-page-container-center-stats">
+            <span class="stats-title">Users:</span>
+            <span class="stats-count-users">144</span>
+            <span class="stats-title">Channels:</span>
+            <span class="stats-count-channels">29</span>
         </div>
-        <div class="main_home-page-container-center-channels">
+        <div class="home-page-container-center-channels">
             <h2 class="top_channels">Top 3 Channels 🔥</h2>
             <div class="grid_container">
-                <p class="grip_no">1.</p>
-                <p class="grip_name">Mega Kurs</p>
-                <span class="material-icons grip_icons">supervised_user_circle</span>
-                <p class="grip_count-users">39</p>
-                <button class="grip_btn-join">JOIN NOW 👋</button>
+                <span class="grid_no">1.</span>
+                <img class="grid_avatar" src="./img/avatar.png">
+                <span class="grid_name">Mega Kurs</span>
+                <span class="material-icons grid_icon">supervised_user_circle</span>
+                <span class="grid_count-users">39</span>
+                <button class="grid_btn-join" title="Join the channel">JOIN NOW 👋</button>
 
-                <p class="grip_no">2.</p>
-                <p class="grip_name">Google Employees</p>
-                <span class="material-icons grip_icons">supervised_user_circle</span>
-                <p class="grip_count-users">21</p>
-                <button class="grip_btn-join">JOIN NOW 👋</button>
+                <span class="grid_no">2.</span>
+                <img class="grid_avatar" src="./img/avatar.png">
+                <span class="grid_name">Google Employees</span>
+                <span class="material-icons grid_icon">supervised_user_circle</span>
+                <span class="grid_count-users">21</span>
+                <button class="grid_btn-join" title="Join the channel">JOIN NOW 👋</button>
 
-                <p class="grip_no">3.</p>
-                <p class="grip_name">Football Fans</p>
-                <span class="material-icons grip_icons">supervised_user_circle</span>
-                <p class="grip_count-users">18</p>
-                <button class="grip_btn-join">JOIN NOW 👋</button>
+                <span class="grid_no">3.</span>
+                <img class="grid_avatar" src="./img/avatar.png">
+                <span class="grid_name">Football Fans</span>
+                <span class="material-icons grid_icon">supervised_user_circle</span>
+                <span class="grid_count-users">18</span>
+                <button class="grid_btn-join" title="Join the channel">JOIN NOW 👋</button>
             </div>
         </div>
     </div>
-    <div class="main_home-page-container-bottom">
-        <button class="main_home-page-container-bottom-btn">Start now</button>
+    <div class="home-page-container-bottom">
+        <a href="/app">
+            <button class="home-page-container-bottom-btn">Start now</button>
+        </a>
     </div>
 </main>
 
-<footer class="footer_home-page">
+<footer class="footer">
     <p class="footer-txt">© 2022 airm & Tomaszenko</p>
 </footer>
 </body>

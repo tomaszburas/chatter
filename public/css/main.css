@@ -125,28 +125,49 @@ input:checked + .slider:before {
     flex-direction: column;
     justify-content: center;
     margin-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 50%;
 }
 
 .title_home-page {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.main_home-page-container-center {
+.home-page-container-center {
     display: flex;
     margin-bottom: 2rem;
     width: 100%;
     align-items: center;
 }
 
-.main_home-page-container-center-stats {
-    margin-right: 3rem;
+.home-page-container-center-stats {
+    margin-right: 2rem;
+    padding:1rem;
+    border-radius: .5rem;
     width: 30%;
+    background: rgb(81,64,165);
+    background: linear-gradient(120deg, rgba(81,64,165,0.22) 0%, rgba(81,64,165,0) 100%);
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-template-rows: 1.5rem 1.5rem;
+    gap: 1% 1%;
 }
 
-.main_home-page-container-center-channels {
+.stats-title {
+    color: var(--purple);
+    align-self: center;
+}
+
+.stats-count-users {
+    align-self: center;
+}
+
+.stats-count-channels {
+    align-self: center;
+}
+
+.home-page-container-center-channels {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -154,48 +175,58 @@ input:checked + .slider:before {
 
 .grid_container{
     display: grid;
-    grid-template-columns: 5% 55% 5% 8% 20%;
+    grid-template-columns: 4% 6% 50% 5% 8% 17%;
     grid-template-rows: 2rem 2rem 2rem;
-    gap: 5% 2%;
+    gap: 2% 1%;
 }
 
-.grip_no {
-    height: 2rem;
+.grid_no {
+    align-self: center;
 }
 
-.grip_count-users {
-    color: var(--purple);
-    margin: auto;
-    width: 50%;
+.grid_avatar {
+    height: 1.7rem;
+    align-self: center;
 }
-.grip_icons {
-    color: var(--purple);
-    margin: auto;
-    width: 50%;
+
+.grid_name {
+    align-self: center;
 }
-.grip_btn-join {
-    font-size: .6rem;
+
+.grid_count-users {
+    color: var(--purple);
+    align-self: center;
+}
+.grid_icon {
+    color: var(--purple);
+    align-self: center;
+}
+.grid_btn-join {
+    font-size: .7rem;
     background-color: var(--purple);
     border-radius: .5rem;
+    align-self: center;
+    padding: .4rem .2rem;
 }
 
 .top_channels {
     margin-bottom: 1rem;
 }
 
-.main_home-page-container-bottom {
+.home-page-container-bottom {
     display: flex;
     justify-content: center;
+    padding: 2rem;
 }
 
-.main_home-page-container-bottom-btn {
+.home-page-container-bottom-btn {
     padding: 1rem 1.5rem;
     border-radius: .5rem;
     background-color: var(--purple);
 }
 
-/*HOME PAGE - FOOTER*/
-.footer_home-page {
+/*FOOTER*/
+.footer {
     height: 2rem;
     display: flex;
     align-items: center;
