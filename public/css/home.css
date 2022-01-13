@@ -1,0 +1,116 @@
+@import "../main.css";
+
+html {
+    background:
+            url(../img/home-page-img-dark.svg)
+            center right -10% / 110vh
+            no-repeat
+            fixed
+            var(--dark-blue)
+}
+
+.main_home-page {
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.title_home-page {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.home-page-container-center {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.home-page-container-center-stats {
+    margin-right: 2.5rem;
+    padding:1rem;
+    border-radius: .5rem;
+    width: 20%;
+    background: var(--purple);
+    background: var(--gradientDark);
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1.5rem 1.5rem;
+    gap: 1% 1%;
+}
+
+.stats-title {
+    color: var(--purple);
+    align-self: center;
+}
+
+.stats-count-users {
+    align-self: center;
+}
+
+.stats-count-channels {
+    align-self: center;
+}
+
+.home-page-container-center-channels {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 3% 5% 50% 4% 6% 17%;
+    grid-template-rows: 2rem 2rem 2rem;
+    gap: 2% 1%;
+}
+
+.grid_no {
+    align-self: center;
+}
+
+.grid_avatar {
+    height: 1.7rem;
+    align-self: center;
+}
+
+.grid_name {
+    align-self: center;
+}
+
+.grid_count-users {
+    color: var(--purple);
+    align-self: center;
+}
+.grid_icon {
+    color: var(--purple);
+    align-self: center;
+}
+.grid_btn-join {
+    font-size: .7rem;
+    background-color: var(--purple);
+    border-radius: .5rem;
+    align-self: center;
+    padding: .4rem .2rem;
+}
+
+.top_channels {
+    margin-bottom: 1rem;
+}
+
+.home-page-container-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.home-page-container-bottom-btn {
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--purple);
+}

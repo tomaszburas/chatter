@@ -1,0 +1,22 @@
+@import "../main.css";
+
+.btn_sign-up {
+    margin-left: 0;
+}
+
+.main_login-page {
+    height: calc(100vh - 7rem);
+    width: calc(100vw - 4rem);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_login-page {
+
+}
+
+
+
+
