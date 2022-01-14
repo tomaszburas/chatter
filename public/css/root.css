@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px; /* 1rem = 10px */
+
+  /* Dark Mode */
+  --color-dark-01: #ffffff;
+  --color-dark-02: #898c99;
+  --color-dark-03: #5140a5;
+  --color-dark-04: #40404f;
+  --color-dark-05: #5140a5;
+  --color-dark-06: #06d6a0;
+  --color-dark-07: #1b9aaa;
+  --color-dark-08: #ef476f;
+  --color-dark-09: #ffc43d;
+  --color-dark-10: #1f1e30;
+  --color-dark-11: rgba(255, 255, 255, 0.05);
+  --color-dark-12: #c4c4c4;
+  --color-dark-13: #af4747;
+
+  --gradient-dark-01: linear-gradient(
+    120deg,
+    rgba(81, 64, 165, 0.22) 0%,
+    rgba(81, 64, 165, 0) 100%
+  );
+
+  --box-shadow-01: 14px 18px 30px 0px rgba(0, 0, 0, 0.05);
+  --box-shadow-02: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  --text-color-01: var(--color-dark-01);
+  --text-color-02: var(--color-dark-02);
+  --text-color-02: var(--color-dark-03);
+
+  --message-color-01: var(--color-dark-04);
+  --message-color-02: var(--color-dark-05);
+  --message-color-03: var(--color-dark-06);
+  --message-color-04: var(--color-dark-07);
+  --message-color-05: var(--color-dark-08);
+  --message-color-06: var(--color-dark-09);
+
+  --gradient-color-01: var(--gradient-dark-01);
+
+  --font-size-sm: 1.4rem;
+  --font-size-base: 1.6rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.4rem;
+  --font-size-2xl: 2.8rem;
+  --font-size-3xl: 3.6rem;
+  --font-size-4xl: 6rem;
+
+  /* Test variables */
+  --padding-sm: 1rem;
+  --padding-base: 1rem;
+  --padding-lg: 1rem;
+  --padding-xl: 1rem;
+
+  --margin-sm: 1rem;
+  --margin-base: 1rem;
+  --margin-lg: 1rem;
+  --margin-xl: 1rem;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  padding: 0;
+  border: 1px solid;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
