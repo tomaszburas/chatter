@@ -29,27 +29,33 @@
 
 <main class="main_login-page">
     <h1 class="title_login-page">Sign in to chatter ⚡</h1>
-    <div class="login-page-container">
-        <label>
-            Username
-            <input type="text" name="username">
+    <div class="page-container">
+        <label class="label">
+            <span class="label-txt">Username</span>
+            <input type="text" name="username" class="label-input">
         </label>
-        <label>
-            Password
-            <input type="password" name="username">
+        <label class="label">
+            <span class="label-txt">Password</span>
+            <input type="password" name="username" class="label-input">
         </label>
-        <button class="btn">Sign in</button>
+        <div class="btn-login-box">
+            <button class="btn btn_sign_in" title="Sign in">Sign in</button>
+        </div>
     </div>
     <p class="create-account-box">
-        New to chatter?
-        <a href="/register" class="purple-color">Create an account</a>
-        .
+        <span class="gray-color">New to chatter?</span>
+        <a href="/register" class="purple-color cursor-pointer" title="Sign up">Create an account</a>
+        <span class="gray-color">.</span>
     </p>
-    <button class="btn">Sign in as guess</button>
+    <button class="btn btn-sign-in-guess" title="Sign in as guess">Sign in as guess</button>
 </main>
 
 <footer class="footer">
-    <p class="footer-txt">© 2022 airm & Tomaszenko</p>
+    <p class="footer-txt">© 2022
+        <a class="cursor-pointer" title="GitHub: airm" href="https://github.com/airfortech">airm</a>
+        &
+        <a class="cursor-pointer" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas">Tomaszenko</a>
+    </p>
 </footer>
 </body>
 </html>

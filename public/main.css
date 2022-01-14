@@ -128,4 +128,38 @@ input:checked + .slider:before {
     color: var(--gray);
 }
 
+/* ----- SCHEMA ----- */
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--purple);
+}
+
+.page-container {
+    padding: 1.5rem;
+    background: var(--gradientDark);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.purple-color {
+    color: var(--purple);
+}
+
+.gray-color {
+    color: var(--gray);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
 

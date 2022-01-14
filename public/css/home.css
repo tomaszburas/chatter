@@ -36,7 +36,6 @@ html {
     padding:1rem;
     border-radius: .5rem;
     width: 20%;
-    background: var(--purple);
     background: var(--gradientDark);
     display: grid;
     grid-template-columns: 80% 20%;
@@ -87,10 +86,12 @@ html {
     color: var(--purple);
     align-self: center;
 }
+
 .grid_icon {
     color: var(--purple);
     align-self: center;
 }
+
 .grid_btn-join {
     font-size: .7rem;
     background-color: var(--purple);
