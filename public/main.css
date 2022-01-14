@@ -135,6 +135,28 @@ input:checked + .slider:before {
     flex-direction: column;
 }
 
+.label-txt {
+    color: var(--gray);
+    margin-bottom: 0.7rem;
+}
+
+.label-input {
+    margin-bottom: 1rem;
+    background-color: var(--dark-blue);
+    padding: .4rem;
+    border-color: var(--gray);
+    border-style: solid;
+    border-radius: .5rem;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--white);
+}
+
+.label-input:focus {
+    border-color: var(--purple);
+    outline: none;
+}
+
 .btn {
     padding: .5rem;
     border-radius: .5rem;
@@ -161,5 +183,26 @@ input:checked + .slider:before {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.schema-page {
+    height: calc(100vh - 7rem);
+    width: calc(100vw - 4rem);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.schema-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
 }
 

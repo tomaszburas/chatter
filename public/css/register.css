@@ -1,5 +1,9 @@
 @import "../main.css";
 
-.main_login-page {
-    height: calc(100vh - 7rem);
+.btn_sign_up {
+    width: 30%;
+}
+
+.btn-sign-in-guess {
+    width: calc(30% + 3rem);
 }
