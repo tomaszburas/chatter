@@ -6,23 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/login.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <title>Chatter</title>
 </head>
 <body>
-<header class="header_home-page">
+<header class="header">
     <a href="/">
-        <button class="logo" title="Chatter">
-            <img class="logo_img" src="./img/sygnet.svg" alt="Sygnet">
-            <p class="logo_name-txt">Chatter</p>
+        <button class="header__logo__btn" title="Chatter">
+            <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
+            <p class="header__logo__txt">Chatter</p>
         </button>
     </a>
-    <div class="header_home-page-right-section">
+    <div class="header__right_section">
         <label class="switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
+            <div class="switch__slider round"></div>
         </label>
         <a href="/register">
-            <button class="btn_sign-up" title="Sign up">Sign up</button>
+            <button class="btn__border" title="Sign up">Sign up</button>
         </a>
     </div>
 </header>
@@ -51,10 +58,10 @@
 </main>
 
 <footer class="footer">
-    <p class="footer-txt">© 2022
-        <a class="cursor-pointer" title="GitHub: airm" href="https://github.com/airfortech">airm</a>
+    <p class="footer__txt">© 2022
+        <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech">airm</a>
         &
-        <a class="cursor-pointer" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas">Tomaszenko</a>
+        <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas">Tomaszenko</a>
     </p>
 </footer>
 </body>

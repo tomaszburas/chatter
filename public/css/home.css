@@ -6,112 +6,133 @@ html {
             center right -10% / 110vh
             no-repeat
             fixed
-            var(--dark-blue)
+            var(--color-dark-10)
 }
 
-.main_home-page {
-    height: calc(100vh - 7rem);
+.main__home-page {
+    height: calc(100vh - var(--header-height) - var(--footer-height) - 2 * var(--padding-lg));
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2rem;
-    font-size: 1.2rem;
-    width: 60%;
+    margin-left: var(--margin-lg);
+    font-size: var(--font-size-lg);
+    width: 50%;
 }
 
-.title_home-page {
-    font-size: 6rem;
-    margin-bottom: 2rem;
+.title__home-page {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--margin-lg);
 }
 
-.home-page-container-center {
+.main__home-page__container__center {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: var(--margin-lg);
     width: 100%;
     align-items: center;
 }
 
-.home-page-container-center-stats {
-    margin-right: 2.5rem;
-    padding:1rem;
-    border-radius: .5rem;
-    width: 20%;
-    background: var(--gradientDark);
+.main__home-page__stats {
+    margin-right: var(--margin-xl);
+    padding: var(--padding-sm);
+    border-radius: var(--border-radius);
+    width: 30%;
+    background: var(--gradient-dark-01);
     display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 1.5rem 1.5rem;
-    gap: 1% 1%;
+    grid-template-columns: 75% 15%;
+    grid-template-rows: var(--font-size-lg) var(--font-size-lg);
+    gap: 10% 10%;
 }
 
-.stats-title {
-    color: var(--purple);
+.stats__title {
+    color: var(--color-dark-05);
     align-self: center;
 }
 
-.stats-count-users {
+.stats__count-users {
     align-self: center;
 }
 
-.stats-count-channels {
+.stats__count-channels {
     align-self: center;
 }
 
-.home-page-container-center-channels {
+.main__home-page__channels {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
 }
 
-.grid_container{
+.home-page__grid__container{
     display: grid;
-    grid-template-columns: 3% 5% 50% 4% 6% 17%;
-    grid-template-rows: 2rem 2rem 2rem;
-    gap: 2% 1%;
+    grid-template-columns: 80% 15%;
+    grid-template-rows: var(--font-size-lg) var(--font-size-lg) var(--font-size-lg);
+    gap: 10% 5%;
 }
 
-.grid_no {
-    align-self: center;
+.home-page__grid__name {
+    display: flex;
+    align-items: center;
 }
 
-.grid_avatar {
-    height: 1.7rem;
-    align-self: center;
+.home-page__grid__user_count {
+    display: flex;
+    align-items: center;
 }
 
-.grid_name {
-    align-self: center;
+.home-page__grid_no {
+    padding-right: var(--padding-sm);
 }
 
-.grid_count-users {
-    color: var(--purple);
-    align-self: center;
+.home-page__grid_avatar {
+    height: var(--font-size-lg);
+    padding-right: var(--padding-sm);
 }
 
-.grid_icon {
-    color: var(--purple);
-    align-self: center;
+.home-page__grid_name {
+    padding-right: var(--padding-sm);
+    cursor: pointer;
 }
 
-.grid_btn-join {
-    font-size: .7rem;
-    background-color: var(--purple);
-    border-radius: .5rem;
-    align-self: center;
-    padding: .4rem .2rem;
+.home-page__grid_icon {
+    padding-right: var(--padding-sm);
+    color: var(--color-dark-05)
 }
 
-.top_channels {
-    margin-bottom: 1rem;
+.home-page__grid__count_users {
+    color: var(--color-dark-05)
 }
 
-.home-page-container-bottom {
+.home-page__channels__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--margin-base);
+}
+
+.main__home-page__container__bottom {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: var(--padding-lg);
+    width: 100%;
 }
 
-.home-page-container-bottom-btn {
-    padding: 1rem 1.5rem;
-    border-radius: .5rem;
-    background-color: var(--purple);
+@media only screen and (max-width: 1300px) {
+    html {
+        background:
+                url(../img/home-page-img-dark.svg)
+                center right -45% / 110vh
+                no-repeat
+                fixed
+                var(--color-dark-10)
+    }
 }
+
+@media only screen and (max-width: 990px) {
+    html {
+        background: var(--color-dark-10);
+    }
+
+    .main__home-page {
+        width: calc(100% - 2 * var(--margin-lg));
+        align-items: center;
+    }
+}
+

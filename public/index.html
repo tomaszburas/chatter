@@ -6,80 +6,94 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/home.css">
-<!--    Material Icons-->
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <title>Chatter</title>
 </head>
 <body>
-<header class="header_home-page">
+<header class="header">
     <a href="/">
-        <button class="logo" title="Chatter">
-        <img class="logo_img" src="./img/sygnet.svg" alt="Sygnet">
-        <p class="logo_name-txt">Chatter</p>
+        <button class="header__logo__btn" title="Chatter">
+            <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
+            <p class="header__logo__txt">Chatter</p>
         </button>
     </a>
-    <div class="header_home-page-right-section">
+    <div class="header__right_section">
         <label class="switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
+            <div class="switch__slider round"></div>
         </label>
         <a href="/login">
             <button title="Sign in">Sign in</button>
         </a>
         <a href="/register">
-            <button class="btn_sign-up" title="Sign up">Sign up</button>
+            <button class="btn__border" title="Sign up">Sign up</button>
         </a>
     </div>
 </header>
 
-<main class="main_home-page">
-    <h1 class="title_home-page">Online Chat</h1>
-    <div class="home-page-container-center">
-        <div class="home-page-container-center-stats">
-            <span class="stats-title">Users:</span>
-            <span class="stats-count-users">144</span>
-            <span class="stats-title">Channels:</span>
-            <span class="stats-count-channels">29</span>
+<main class="main__home-page">
+    <h1 class="title__home-page">Online Chat</h1>
+    <div class="main__home-page__container__center">
+        <div class="main__home-page__stats">
+            <span class="stats__title">Users:</span>
+            <span class="stats__count-users">144</span>
+            <span class="stats__title">Channels:</span>
+            <span class="stats__count-channels">29</span>
         </div>
-        <div class="home-page-container-center-channels">
-            <h2 class="top_channels">Top 3 Channels 🔥</h2>
-            <div class="grid_container">
-                <span class="grid_no">1.</span>
-                <img class="grid_avatar" src="./img/avatar.png">
-                <span class="grid_name">Mega Kurs</span>
-                <span class="material-icons grid_icon">supervised_user_circle</span>
-                <span class="grid_count-users">39</span>
-                <button class="grid_btn-join" title="Join the channel">JOIN NOW 👋</button>
+        <div class="main__home-page__channels">
+            <h2 class="home-page__channels__title">Top 3 Channels 🔥</h2>
+            <div class="home-page__grid__container">
 
-                <span class="grid_no">2.</span>
-                <img class="grid_avatar" src="./img/avatar.png">
-                <span class="grid_name">Google Employees</span>
-                <span class="material-icons grid_icon">supervised_user_circle</span>
-                <span class="grid_count-users">21</span>
-                <button class="grid_btn-join" title="Join the channel">JOIN NOW 👋</button>
+                <div class="home-page__grid__name">
+                    <span class="home-page__grid_no">1.</span>
+                    <img class="home-page__grid_avatar" src="./img/avatar.png">
+                    <span class="home-page__grid_name">Mega Kurs</span>
+                </div>
+                <div class="home-page__grid__user_count">
+                    <span class="material-icons home-page__grid_icon">supervised_user_circle</span>
+                    <span class="home-page__grid__count_users">39</span>
+                </div>
 
-                <span class="grid_no">3.</span>
-                <img class="grid_avatar" src="./img/avatar.png">
-                <span class="grid_name">Football Fans</span>
-                <span class="material-icons grid_icon">supervised_user_circle</span>
-                <span class="grid_count-users">18</span>
-                <button class="grid_btn-join" title="Join the channel">JOIN NOW 👋</button>
+                <div class="home-page__grid__name">
+                    <span class="home-page__grid_no">2.</span>
+                    <img class="home-page__grid_avatar" src="./img/avatar.png">
+                    <span class="home-page__grid_name">Google Employees</span>
+                </div>
+                <div class="home-page__grid__user_count">
+                    <span class="material-icons home-page__grid_icon">supervised_user_circle</span>
+                    <span class="home-page__grid__count_users">22</span>
+                </div>
+
+                <div class="home-page__grid__name">
+                    <span class="home-page__grid_no">3.</span>
+                    <img class="home-page__grid_avatar" src="./img/avatar.png">
+                    <span class="home-page__grid_name">Football Fans</span>
+                </div>
+                <div class="home-page__grid__user_count">
+                    <span class="material-icons home-page__grid_icon">supervised_user_circle</span>
+                    <span class="home-page__grid__count_users">15</span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="home-page-container-bottom">
+    <div class="main__home-page__container__bottom">
         <a href="/app">
-            <button class="home-page-container-bottom-btn" title="Go to chat!">Start now</button>
+            <button class="btn" title="Go to chat!">Start now</button>
         </a>
     </div>
 </main>
 
 <footer class="footer">
-    <p class="footer-txt">© 2022
-        <a class="cursor-pointer" title="GitHub: airm" href="https://github.com/airfortech">airm</a>
+    <p class="footer__txt">© 2022
+        <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech">airm</a>
         &
-        <a class="cursor-pointer" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas">Tomaszenko</a>
+        <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas">Tomaszenko</a>
     </p>
 </footer>
 </body>

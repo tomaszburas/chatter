@@ -56,24 +56,44 @@
 
   /* Test variables */
   --padding-sm: 1rem;
-  --padding-base: 1rem;
-  --padding-lg: 1rem;
-  --padding-xl: 1rem;
+  --padding-base: 1.5rem;
+  --padding-lg: 2rem;
+  --padding-xl: 3rem;
 
   --margin-sm: 1rem;
-  --margin-base: 1rem;
-  --margin-lg: 1rem;
-  --margin-xl: 1rem;
+  --margin-base: 1.5rem;
+  --margin-lg: 2rem;
+  --margin-xl: 3rem;
+
+  --header-height: 4rem;
+  --footer-height: 2rem;
+
+  --switch-width: 4rem;
+  --switch-slider: 2rem;
+
+  --logo-margin: .7rem;
+
+  --border-radius: 1rem;
 }
 
 html {
   font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-dark-10);
+  display:flex;
+  flex-direction: column;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  /*-webkit-tap-highlight-color: transparent;*/
+  -webkit-tap-highlight-color: transparent;
+  padding: var(--padding-lg);
+  max-width: 1920px;
+  width: calc(100% - var(--padding-base)*2);
+  align-self: center;
+  color: var(--text-color-01);
 }
 
 a {
