@@ -1,0 +1,112 @@
+@import "root.css";
+
+body {
+  background: #282d47;
+  color: white;
+}
+
+/* Fonts */
+.title-font {
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: var(--other-color-01);
+}
+
+/* Delete it later */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  padding: 0 50px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 74px;
+  padding: 0 50px;
+  color: white;
+  /* background-color: rgba(255, 2552, 255, 0.05); */
+}
+
+/*  */
+
+.chat {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 436px 1fr 436px;
+  grid-template-rows: 80px 1fr 40px;
+  grid-template-areas:
+    "chats-header current-chat-header members-header"
+    "chats-list   messages            members-list"
+    "chats-list   message             members-list";
+}
+
+.chats-header {
+  grid-area: chats-header;
+  padding: 0 var(--layout-padding-base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.chats-header__tools {
+}
+
+.current-chat-header {
+  grid-area: current-chat-header;
+  padding: 0 var(--layout-padding-base);
+  display: flex;
+  align-items: center;
+  /* background-color: orange; */
+}
+
+.members-header {
+  grid-area: members-header;
+  padding: 0 var(--layout-padding-base);
+  display: flex;
+  align-items: center;
+  /* background-color: green; */
+}
+
+.chats-list {
+  grid-area: chats-list;
+  padding: 0 var(--layout-padding-base);
+  /* background-color: rgb(194, 53, 53); */
+  border-right: 2px solid var(--other-color-02);
+}
+
+.members-list {
+  grid-area: members-list;
+  padding: 0 var(--layout-padding-base);
+  border-left: 2px solid var(--other-color-02);
+  /* background-color: rgb(34, 134, 34); */
+}
+
+.messages {
+  grid-area: messages;
+  padding: 0 var(--layout-padding-base);
+  /* background-color: rgb(209, 144, 23); */
+}
+
+.message {
+  grid-area: message;
+  padding: 0 var(--layout-padding-base);
+  /* background-color: rgb(182, 137, 53); */
+}

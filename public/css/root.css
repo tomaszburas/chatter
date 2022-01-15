@@ -44,6 +44,9 @@
   --message-color-05: var(--color-dark-08);
   --message-color-06: var(--color-dark-09);
 
+  --other-color-01: var(--color-dark-10);
+  --other-color-02: var(--color-dark-11);
+
   --gradient-color-01: var(--gradient-dark-01);
 
   --font-size-sm: 1.4rem;
@@ -59,6 +62,8 @@
   --padding-base: 1rem;
   --padding-lg: 1rem;
   --padding-xl: 1rem;
+
+  --layout-padding-base: 5rem;
 
   --margin-sm: 1rem;
   --margin-base: 1rem;
