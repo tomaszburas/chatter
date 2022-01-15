@@ -100,31 +100,31 @@ input:checked + .switch__slider:before {
     color: var(--color-dark-02);
 }
 
-/* ----- SCHEMA ----- */
+/* ----- TEMPLATE ----- */
 
 .label {
     display: flex;
     flex-direction: column;
 }
 
-.label-txt {
+.label__txt {
     color: var(--color-dark-02);
-    margin-bottom: 0.7rem;
+    margin-bottom: var(--margin-sm);
 }
 
-.label-input {
-    margin-bottom: 1rem;
+.label__input {
+    margin-bottom: var(--margin-sm);
     background-color: var(--color-dark-10);
-    padding: .4rem;
+    padding: calc(var(--font-size-base) / 3);
     border-color: var(--color-dark-02);
     border-style: solid;
-    border-radius: .5rem;
+    border-radius: var(--border-radius);
     box-shadow: none;
     text-shadow: none;
     color: var(--text-color-01);
 }
 
-.label-input:focus {
+.label__input:focus {
     border-color: var(--color-dark-05);
     outline: none;
 }
@@ -135,38 +135,42 @@ input:checked + .switch__slider:before {
     background-color: var(--color-dark-05);
 }
 
-.page-container {
-    padding: 1.5rem;
+.container__wrapper {
+    padding: var(--padding-base);
     background: var(--gradient-dark-01);
-    border-radius: .5rem;
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin-bottom: 2rem;
+    margin-bottom: var(--margin-lg);
 }
 
 .cursor {
     cursor: pointer;
 }
 
-.schema-page {
-    height: calc(100vh - 7rem);
-    width: calc(100% - 4rem);
-    display:flex;
+.container {
+    height: calc(100vh - var(--header-height) - var(--footer-height) - 2 * var(--padding-lg));
+    width: calc(100% - 2 * var(--padding-lg));
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: var(--font-size-base);
 }
 
-.schema-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+.container__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--margin-lg);
 }
 
-.btn-box {
+.container__btn {
     display: flex;
     justify-content: center;
-    margin-top: .5rem;
+    margin-top: var(--border-radius);
+}
+
+.btn__sign-in-guess {
+    width: 30%;
 }
 
