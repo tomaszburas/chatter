@@ -67,6 +67,27 @@ body {
 }
 
 .chats-header__tools {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.chats-header__tools-button {
+  width: 28px;
+  height: 28px;
+  margin-left: 2px;
+  color: var(--text-color-02);
+  transition: var(--transition-normal);
+}
+
+.chats-header__tools-button:hover {
+  color: var(--text-color-01);
+}
+
+.chats-header__tools-button--rounded {
+  border-radius: 9px;
+  color: var(--text-color-03);
+  background: var(--gradient-color-01);
 }
 
 .current-chat-header {

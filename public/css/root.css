@@ -35,7 +35,7 @@
 
   --text-color-01: var(--color-dark-01);
   --text-color-02: var(--color-dark-02);
-  --text-color-02: var(--color-dark-03);
+  --text-color-03: var(--color-dark-03);
 
   --message-color-01: var(--color-dark-04);
   --message-color-02: var(--color-dark-05);
@@ -69,6 +69,8 @@
   --margin-base: 1rem;
   --margin-lg: 1rem;
   --margin-xl: 1rem;
+
+  --transition-normal: all 0.3s ease;
 }
 
 html {
