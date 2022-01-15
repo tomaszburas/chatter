@@ -11,6 +11,12 @@ body {
   font-weight: 300;
 }
 
+.subtitle-font {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--text-color-03);
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -25,12 +31,16 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   height: 135px;
   padding: 0 50px;
   color: white;
-  background-color: rgba(255, 255, 255, 0.05);
+  /* background-color: rgba(255, 255, 255, 0.05); */
+}
+
+.header h1 {
+  font-weight: 400;
 }
 
 .footer {
@@ -111,6 +121,83 @@ body {
   padding: 0 var(--layout-padding-base);
   /* background-color: rgb(194, 53, 53); */
   border-right: 2px solid var(--other-color-02);
+}
+
+.channels-list {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.channel {
+  height: 78px;
+  padding: 12px 8px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 11px;
+  background: var(--gradient-color-01);
+}
+
+.channel__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.channel__container div {
+  display: flex;
+}
+
+.channel__container--middle {
+  flex: 1;
+  margin: 0 14px;
+}
+
+.channel__conteiner--right {
+  align-items: end;
+}
+
+.channel__avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--other-color-03);
+}
+
+.channel__name {
+  font-size: var(--font-size-base);
+  font-weight: 300;
+}
+
+.channel__last-message {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--text-color-02);
+}
+
+.channel__fav {
+  color: var(--other-color-04);
+}
+
+.channel__participants {
+  margin-right: 10px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-color-03);
+}
+
+.channel__last-time {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--text-color-02);
+
+  text-transform: capitalize;
 }
 
 .members-list {

@@ -24,12 +24,12 @@
   <body>
     <div class="app">
       <header class="header">
-        <h1>Header - import it later</h1>
+        <h1>chatter - import it later</h1>
       </header>
       <section class="chat">
         <header class="chats-header">
           <h2 class="title-font">Chats</h2>
-          <div class="chats-header__tools">
+          <menu class="chats-header__tools">
             <button class="chats-header__tools-button">
               <svg
                 width="15"
@@ -88,7 +88,7 @@
                 />
               </svg>
             </button>
-          </div>
+          </menu>
         </header>
         <header class="current-chat-header">
           <h2 class="title-font">Mega Kurs</h2>
@@ -96,10 +96,108 @@
         <header class="members-header">
           <h2 class="title-font">Chat Members</h2>
         </header>
-        <section class="chats-list">chats-list</section>
-        <section class="members-list">members-list</section>
-        <section class="messages">messages</section>
-        <section class="message">message</section>
+        <section class="chats-list">
+          <div class="chats-list-type">
+            <h3 class="subtitle-font">Priv</h3>
+            <ul class="channels-list">
+              <li class="channel">
+                  <img
+                    src="https://gravatar.com/avatar/88771c7b8f5994128337d550528df482?s=200&d=robohash&r=x"
+                    alt=""
+                    class="channel__avatar"
+                    />
+                  <div class="channel__container channel__container--middle">
+                    <p class="channel__name">Mega Kurs</p>
+                    <p class="channel__last-message">Sandy: Hello</p>
+                  </div>
+                  <div class="channel__container channel__conteiner--right">
+                    <div>
+                      <p class="channel__participants">27</p>
+                      <button class="channel__fav">
+                        <svg
+                          width="16"
+                          height="15"
+                          viewBox="0 0 16 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="channel__last-time">2m</p>
+                  </div>
+              </li>
+              <li class="channel">
+                  <img
+                    src="https://gravatar.com/avatar/88771c7b8f5994128337d550528df482?s=200&d=robohash&r=x"
+                    alt=""
+                    class="channel__avatar"
+                    />
+                  <div class="channel__container channel__container--middle">
+                    <p class="channel__name">Python</p>
+                    <p class="channel__last-message">Sandy: Hello</p>
+                  </div>
+                  <div class="channel__container channel__conteiner--right">
+                    <div>
+                      <p class="channel__participants">27</p>
+                      <button class="channel__fav">
+                        <svg
+                          width="16"
+                          height="15"
+                          viewBox="0 0 16 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="channel__last-time">2m</p>
+                  </div>
+              </li>
+              <li class="channel">
+                  <img
+                    src="https://gravatar.com/avatar/88771c7b8f5994128337d550528df482?s=200&d=robohash&r=x"
+                    alt=""
+                    class="channel__avatar"
+                    />
+                  <div class="channel__container channel__container--middle">
+                    <p class="channel__name">C++ Channel</p>
+                    <p class="channel__last-message">Sandy: Hello</p>
+                  </div>
+                  <div class="channel__container channel__conteiner--right">
+                    <div>
+                      <p class="channel__participants">27</p>
+                      <button class="channel__fav">
+                        <svg
+                          width="16"
+                          height="15"
+                          viewBox="0 0 16 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="channel__last-time">2m</p>
+                  </div>
+              </li>
+            </ul>
+          </section>
+          <section class="members-list">members-list</section>
+          <section class="messages">messages</section>
+          <section class="message">message</section>
       </section>
       <footer class="footer">
         <div class="footer__p">© 2022 airm & Tomaszenko</div>
