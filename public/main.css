@@ -1,4 +1,4 @@
-@import "./css/reset.css";
+@import "./css/root.css";
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 :root {
@@ -17,8 +17,6 @@
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: var(--white);
     width: 100vw;
     height: 100vh;
     background-color: var(--dark-blue);
@@ -30,6 +28,8 @@ body {
     max-width: 1920px;
     width: calc(100% - 4rem);
     align-self: center;
+    font-size: 1rem;
+    color: var(--white);
 }
 
 /* ----- HEADER ----- */
