@@ -123,6 +123,10 @@ body {
   border-right: 2px solid var(--other-color-02);
 }
 
+.chats-list-type {
+  margin-top: 1.5rem;
+}
+
 .channels-list {
   margin: 12px 0;
   display: flex;
@@ -185,12 +189,19 @@ body {
   margin: 0 14px;
 }
 
-.channel__conteiner--right {
-  align-items: end;
+.channel__conteiner--priv {
+  justify-content: end;
 }
 
 .channel__avatar {
-  display: block;
+  width: 50px;
+  height: 50px;
+  /* fix variable img */
+  background-image: url("../img/tag_black_24dp.svg");
+  background-size: contain;
+}
+
+.channel__user-avatar {
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -206,6 +217,10 @@ body {
   font-size: var(--font-size-sm);
   font-weight: 300;
   color: var(--text-color-02);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 18rem;
 }
 
 .channel__fav {
@@ -223,8 +238,6 @@ body {
   font-size: var(--font-size-sm);
   font-weight: 300;
   color: var(--text-color-02);
-
-  text-transform: capitalize;
 }
 
 .members-list {
