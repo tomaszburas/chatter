@@ -87,7 +87,7 @@ body {
   height: 28px;
   margin-left: 2px;
   color: var(--text-color-02);
-  transition: var(--transition-normal);
+  transition: color var(--transition-normal);
 }
 
 .chats-header__tools-button:hover {
@@ -131,6 +131,8 @@ body {
 }
 
 .channel {
+  position: relative;
+  z-index: 1;
   height: 78px;
   padding: 12px 8px;
   margin: 5px 0;
@@ -138,7 +140,32 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 11px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform var(--transition-normal);
+}
+
+.channel:hover {
+  transform: translateX(5px);
+}
+
+.channel--active::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
   background: var(--gradient-color-01);
+  border-radius: inherit;
+  opacity: 1;
+  transition: opacity var(--transition-normal);
+  box-shadow: var(--box-shadow-01);
+}
+
+.channel--active:hover::after {
+  opacity: 1;
 }
 
 .channel__container {

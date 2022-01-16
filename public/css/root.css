@@ -74,7 +74,7 @@
   --margin-lg: 1rem;
   --margin-xl: 1rem;
 
-  --transition-normal: all 0.3s ease;
+  --transition-normal: 0.3s ease;
 }
 
 html {
