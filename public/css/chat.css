@@ -67,7 +67,7 @@ body {
   grid-template-areas:
     "chats-header current-chat-header members-header"
     "chats-list   current-channel     members-list"
-    "chats-list   message             members-list";
+    "chats-list   message-form        members-list";
 }
 
 .tools-primary {
@@ -352,6 +352,7 @@ body {
   transition: transform var(--transition-normal);
 }
 
+/* todo: fix no-animation */
 .current-channel__topic--full-topic .current-channel__topic-text,
 .current-channel__topic-text:hover {
   white-space: initial;
@@ -365,12 +366,64 @@ body {
 }
 
 .messages {
+  margin: 2rem 0;
   flex: 1;
-  background-color: rgba(209, 144, 23, 0.075);
+  /* background-color: rgba(255, 255, 255, 0.02); */
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .message {
-  grid-area: message;
+  display: flex;
+  margin-bottom: 0.8rem;
+  max-width: 70%;
+}
+
+.message__avatar {
+  margin-right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: var(--other-color-03);
+  transition: transform var(--transition-normal);
+}
+
+.message__content {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--text-color-01);
+  padding: 8px 12px;
+  border-radius: 9px;
+  background-color: var(--message-color-01);
+}
+
+.message--no-avatar .message__content {
+  margin-left: 38px;
+}
+
+.message--you {
+  align-self: flex-end;
+}
+
+.message--you .message__content {
+  background-color: var(--message-color-02);
+}
+
+.message--you .message__avatar {
+  order: 1;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.message--no-avatar.message--you .message__content {
+  margin-right: 38px;
+}
+
+.message-form {
+  grid-area: message-form;
   padding: 0 var(--layout-padding-base);
   /* background-color: rgb(182, 137, 53); */
 }
