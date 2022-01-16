@@ -189,6 +189,10 @@ body {
   margin: 0 14px;
 }
 
+.channel__container--right {
+  align-items: flex-end;
+}
+
 .channel__conteiner--priv {
   justify-content: end;
 }
