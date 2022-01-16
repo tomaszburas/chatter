@@ -25,7 +25,8 @@ body {
   margin: 0 auto;
   /* max-width: 1600px; */
   /* temporary width */
-  width: 1400px;
+  min-width: 1400px;
+  max-width: 1800px;
   background-color: var(--other-color-01);
 }
 
