@@ -426,4 +426,36 @@ body {
   grid-area: message-form;
   padding: 0 var(--layout-padding-base);
   /* background-color: rgb(182, 137, 53); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-form__container {
+  position: relative;
+  flex: 1;
+}
+
+.message-form__input {
+  width: 98%;
+  height: 4rem;
+  padding-left: 2rem;
+  padding-right: 8rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--other-color-05);
+  color: var(--text-color-02);
+}
+
+.message-form__container .tools-primary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.message-form__send {
+  color: var(--message-color-02);
 }

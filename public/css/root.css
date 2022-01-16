@@ -25,6 +25,7 @@
   --color-dark-13: #af4747;
   --color-dark-14: #886fac;
   --color-dark-15: #f0c340;
+  --color-dark-16: rgba(255, 255, 255, 0.15);
 
   --gradient-dark-01: linear-gradient(
     120deg,
@@ -52,6 +53,7 @@
   --other-color-02: var(--color-dark-11);
   --other-color-03: var(--color-dark-14);
   --other-color-04: var(--color-dark-15);
+  --other-color-05: var(--color-dark-16);
 
   --gradient-color-01: var(--gradient-dark-01);
 
