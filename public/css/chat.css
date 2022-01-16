@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
   /* max-width: 1600px; */
   /* temporary width */
-  width: 1200px;
+  width: 1400px;
   background-color: var(--other-color-01);
 }
 
@@ -211,7 +211,8 @@ body {
   width: 50px;
   height: 50px;
   /* fix variable img */
-  background-image: url("../img/tag_black_24dp.svg");
+  /* background-image: url("../img/tag_black_24dp.svg"); */
+  background-image: var(--image-dark-tag);
   background-size: contain;
   transition: transform var(--transition-normal);
 }
