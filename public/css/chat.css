@@ -158,8 +158,9 @@ body {
   transition: transform var(--transition-normal);
 }
 
-.channel:hover {
-  transform: translateX(5px);
+.channel:hover .channel__avatar,
+.channel:hover .channel__user-avatar {
+  transform: scale(1.2);
 }
 
 .channel--active::after {
@@ -212,6 +213,7 @@ body {
   /* fix variable img */
   background-image: url("../img/tag_black_24dp.svg");
   background-size: contain;
+  transition: transform var(--transition-normal);
 }
 
 .channel__user-avatar {
@@ -219,6 +221,7 @@ body {
   height: 50px;
   border-radius: 100%;
   background-color: var(--other-color-03);
+  transition: transform var(--transition-normal);
 }
 
 .channel__name {
@@ -281,11 +284,10 @@ body {
   align-items: center;
   border-radius: 11px;
   user-select: none;
-  transition: transform var(--transition-normal);
 }
 
-.member:hover {
-  transform: translateX(5px);
+.member:hover .member__avatar {
+  transform: scale(1.2);
 }
 
 .member__avatar {
@@ -293,6 +295,7 @@ body {
   height: 40px;
   border-radius: 100%;
   background-color: var(--other-color-03);
+  transition: transform var(--transition-normal);
 }
 
 .member__name {
