@@ -24,7 +24,7 @@
     font-size: var(--font-size-lg);
 }
 
-.header__right_section {
+.header__right-section {
     display: flex;
     align-items: center;
 }
