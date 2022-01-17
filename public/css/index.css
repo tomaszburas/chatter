@@ -69,36 +69,41 @@ html {
     gap: 10% 5%;
 }
 
-.home-page__grid__name {
+.home-page__grid-name__wrapper {
     display: flex;
     align-items: center;
 }
 
-.home-page__grid__user_count {
+.home-page__grid-user-count__wrapper {
     display: flex;
     align-items: center;
 }
 
-.home-page__grid_no {
+.home-page__grid__user-count {
+    display: flex;
+    align-items: center;
+}
+
+.home-page__grid-no {
     padding-right: var(--padding-sm);
 }
 
-.home-page__grid_avatar {
+.home-page__grid-avatar {
     height: var(--font-size-lg);
     padding-right: var(--padding-sm);
 }
 
-.home-page__grid_name {
+.home-page__grid-name {
     padding-right: var(--padding-sm);
     cursor: pointer;
 }
 
-.home-page__grid_icon {
-    padding-right: var(--padding-sm);
+.home-page__grid-icon {
+    padding-left: calc(var(--padding-sm)/2);
     color: var(--color-dark-05)
 }
 
-.home-page__grid__count_users {
+.home-page__grid-count-users {
     color: var(--color-dark-05)
 }
 
