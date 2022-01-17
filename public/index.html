@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,85 +24,89 @@
     <title>Chatter</title>
 </head>
 <body>
-<header class="header">
-    <a href="/">
-        <button class="header__logo__btn" title="Chatter">
-            <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
-            <p class="header__logo__txt">Chatter</p>
-        </button>
-    </a>
-    <div class="header__right-section">
-        <label class="switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="switch__slider round"></div>
-        </label>
-        <a href="/login">
-            <button title="Sign in">Sign in</button>
-        </a>
-        <a href="/register">
-            <button class="btn__border" title="Sign up">Sign up</button>
-        </a>
-    </div>
-</header>
 
-<main class="main__home-page">
-    <h1 class="title__home-page">Online Chat</h1>
-    <div class="main__home-page__container__center">
-        <div class="main__home-page__stats">
-            <span class="stats__title">Users:</span>
-            <span class="stats__count-users">144</span>
-            <span class="stats__title">Channels:</span>
-            <span class="stats__count-channels">29</span>
+<div class="wrapper">
+    <header class="header">
+        <a href="/">
+            <button class="header__logo__btn" title="Chatter">
+                <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
+                <p class="header__logo__txt">Chatter</p>
+            </button>
+        </a>
+        <div class="header__right-section">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="switch__slider round"></div>
+            </label>
+            <a href="/login">
+                <button title="Sign in">Sign in</button>
+            </a>
+            <a href="/register">
+                <button class="btn__border" title="Sign up">Sign up</button>
+            </a>
         </div>
-        <div class="main__home-page__channels">
-            <h2 class="home-page__channels__title">Top 3 Channels 🔥</h2>
-            <div class="home-page__grid__container">
+    </header>
 
-                <div class="home-page__grid-name__wrapper">
-                    <span class="home-page__grid-no">1.</span>
-                    <img class="home-page__grid-avatar" src="./img/avatar.png">
-                    <span class="home-page__grid-name">Mega Kurs</span>
-                </div>
-                <div class="home-page__grid-user-count__wrapper">
-                    <span class="home-page__grid-count-users">39</span>
-                    <i class='bx bxs-group home-page__grid-icon'></i>
-                </div>
+    <main class="main__home-page">
+        <h1 class="title__home-page">Online Chat</h1>
+        <div class="main__home-page__container__center">
+            <div class="main__home-page__stats">
+                <span class="stats__title">Users:</span>
+                <span class="stats__count-users">144</span>
+                <span class="stats__title">Channels:</span>
+                <span class="stats__count-channels">29</span>
+            </div>
+            <div class="main__home-page__channels">
+                <h2 class="home-page__channels__title">Top 3 Channels 🔥</h2>
+                <div class="home-page__grid__container">
 
-                <div class="home-page__grid-name__wrapper">
-                    <span class="home-page__grid-no">2.</span>
-                    <img class="home-page__grid-avatar" src="./img/avatar.png">
-                    <span class="home-page__grid-name">Google Employees</span>
-                </div>
-                <div class="home-page__grid-user-count__wrapper">
-                    <span class="home-page__grid-count-users">22</span>
-                    <i class='bx bxs-group home-page__grid-icon'></i>
-                </div>
+                    <div class="home-page__grid-name__wrapper">
+                        <span class="home-page__grid-no">1.</span>
+                        <img class="home-page__grid-avatar" src="./img/avatar.png">
+                        <span class="home-page__grid-name">Mega Kurs</span>
+                    </div>
+                    <div class="home-page__grid-user-count__wrapper">
+                        <span class="home-page__grid-count-users">39</span>
+                        <i class='bx bxs-group home-page__grid-icon'></i>
+                    </div>
 
-                <div class="home-page__grid-name__wrapper">
-                    <span class="home-page__grid-no">3.</span>
-                    <img class="home-page__grid-avatar" src="./img/avatar.png">
-                    <span class="home-page__grid-name">Football Fans</span>
-                </div>
-                <div class="home-page__grid-user-count__wrapper">
-                    <span class="home-page__grid-count-users">15</span>
-                    <i class='bx bxs-group home-page__grid-icon'></i>
+                    <div class="home-page__grid-name__wrapper">
+                        <span class="home-page__grid-no">2.</span>
+                        <img class="home-page__grid-avatar" src="./img/avatar.png">
+                        <span class="home-page__grid-name">Google Employees</span>
+                    </div>
+                    <div class="home-page__grid-user-count__wrapper">
+                        <span class="home-page__grid-count-users">22</span>
+                        <i class='bx bxs-group home-page__grid-icon'></i>
+                    </div>
+
+                    <div class="home-page__grid-name__wrapper">
+                        <span class="home-page__grid-no">3.</span>
+                        <img class="home-page__grid-avatar" src="./img/avatar.png">
+                        <span class="home-page__grid-name">Football Fans</span>
+                    </div>
+                    <div class="home-page__grid-user-count__wrapper">
+                        <span class="home-page__grid-count-users">15</span>
+                        <i class='bx bxs-group home-page__grid-icon'></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main__home-page__container__bottom">
-        <a href="/app">
-            <button class="btn" title="Go to chat!">Start now</button>
-        </a>
-    </div>
-</main>
+        <div class="main__home-page__container__bottom">
+            <a href="/app">
+                <button class="btn" title="Go to chat!">Start now</button>
+            </a>
+        </div>
+    </main>
 
-<footer class="footer">
-    <p class="footer__txt">© 2022
-        <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech" target="_blank">airm</a>
-        &
-        <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
-    </p>
-</footer>
+    <footer class="footer">
+        <p class="footer__txt">© 2022
+            <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech" target="_blank">airm</a>
+            &
+            <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
+        </p>
+    </footer>
+</div>
+
 </body>
 </html>

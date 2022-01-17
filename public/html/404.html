@@ -24,43 +24,47 @@
     <title>Chatter</title>
 </head>
 <body>
-<header class="header">
-    <a href="/">
-        <button class="header__logo__btn" title="Chatter">
-            <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
-            <p class="header__logo__txt">Chatter</p>
+
+<div class="wrapper">
+    <header class="header">
+        <a href="/">
+            <button class="header__logo__btn" title="Chatter">
+                <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
+                <p class="header__logo__txt">Chatter</p>
+            </button>
+        </a>
+        <div class="header__right-section">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="switch__slider round"></div>
+            </label>
+            <a href="/login">
+                <button title="Sign in">Sign in</button>
+            </a>
+            <a href="/register">
+                <button class="btn__border" title="Sign up">Sign up</button>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="container__title">404: Page Not Found 🛑</h1>
+        <button class="btn btn__sign-in-guess" title="Delete your account">
+            <a href="/" class="btn__back-to-home">
+                Back to home page
+                <i class='bx bx-chevrons-left'></i>
+            </a>
         </button>
-    </a>
-    <div class="header__right-section">
-        <label class="switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="switch__slider round"></div>
-        </label>
-        <a href="/login">
-            <button title="Sign in">Sign in</button>
-        </a>
-        <a href="/register">
-            <button class="btn__border" title="Sign up">Sign up</button>
-        </a>
-    </div>
-</header>
+    </main>
 
-<main class="container">
-    <h1 class="container__title">404: Page Not Found 🛑</h1>
-    <button class="btn btn__sign-in-guess" title="Delete your account">
-        <a href="/" class="btn__back-to-home">
-            Back to home page
-            <i class='bx bx-chevrons-left'></i>
-        </a>
-    </button>
-</main>
+    <footer class="footer">
+        <p class="footer__txt">© 2022
+            <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech" target="_blank">airm</a>
+            &
+            <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
+        </p>
+    </footer>
+</div>
 
-<footer class="footer">
-    <p class="footer__txt">© 2022
-        <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech" target="_blank">airm</a>
-        &
-        <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
-    </p>
-</footer>
 </body>
 </html>

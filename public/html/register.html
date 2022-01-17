@@ -22,53 +22,57 @@
     <title>Chatter</title>
 </head>
 <body>
-<header class="header">
-    <a href="/">
-        <button class="header__logo__btn" title="Chatter">
-            <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
-            <p class="header__logo__txt">Chatter</p>
-        </button>
-    </a>
-    <div class="header__right-section">
-        <label class="switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="switch__slider round"></div>
-        </label>
-        <span class="right-section__txt--gray">Already have an account?</span>
-        <a href="/login">
-            <button class="btn__border" title="Sign in">Sign in</button>
+
+<div class="wrapper">
+    <header class="header">
+        <a href="/">
+            <button class="header__logo__btn" title="Chatter">
+                <img class="header__logo__img" src="./img/sygnet.svg" alt="Sygnet">
+                <p class="header__logo__txt">Chatter</p>
+            </button>
         </a>
-    </div>
-</header>
-
-<main class="container">
-    <h1 class="container__title">Welcome to chatter! 👊 </br>Let's begin the adventure</h1>
-    <div class="container__wrapper">
-        <label class="label">
-            <span class="label__txt">Username</span>
-            <input type="text" name="username" class="label__input">
-        </label>
-        <label class="label">
-            <span class="label__txt">Password</span>
-            <input type="password" name="username" class="label__input">
-        </label>
-        <label class="label">
-            <span class="label__txt">E-mail</span>
-            <input type="email" name="email" class="label__input">
-        </label>
-        <div class="container__btn">
-            <button class="btn" title="Sign up">Sign up</button>
+        <div class="header__right-section">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="switch__slider round"></div>
+            </label>
+            <span class="right-section__txt--gray">Already have an account?</span>
+            <a href="/login">
+                <button class="btn__border" title="Sign in">Sign in</button>
+            </a>
         </div>
-    </div>
-    <button class="btn btn__sign-in-guess" title="Sign in as guess">Sign in as guess</button>
-</main>
+    </header>
 
-<footer class="footer">
-    <p class="footer__txt">© 2022
-        <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech" target="_blank">airm</a>
-        &
-        <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
-    </p>
-</footer>
+    <main class="container">
+        <h1 class="container__title">Welcome to chatter! 👊 </br>Let's begin the adventure</h1>
+        <div class="container__wrapper">
+            <label class="label">
+                <span class="label__txt">Username</span>
+                <input type="text" name="username" class="label__input">
+            </label>
+            <label class="label">
+                <span class="label__txt">Password</span>
+                <input type="password" name="username" class="label__input">
+            </label>
+            <label class="label">
+                <span class="label__txt">E-mail</span>
+                <input type="email" name="email" class="label__input">
+            </label>
+            <div class="container__btn">
+                <button class="btn" title="Sign up">Sign up</button>
+            </div>
+        </div>
+        <button class="btn btn__sign-in-guess" title="Sign in as guess">Sign in as guess</button>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__txt">© 2022
+            <a class="cursor" title="GitHub: airm" href="https://github.com/airfortech" target="_blank">airm</a>
+            &
+            <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
+        </p>
+    </footer>
+</div>
+
 </body>
 </html>
