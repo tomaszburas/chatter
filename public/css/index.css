@@ -74,6 +74,11 @@ html {
     align-items: center;
 }
 
+.home-page__grid-user-count__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .home-page__grid__user-count {
     display: flex;
     align-items: center;
@@ -94,11 +99,11 @@ html {
 }
 
 .home-page__grid-icon {
-    padding-right: var(--padding-sm);
+    padding-left: calc(var(--padding-sm)/2);
     color: var(--color-dark-05)
 }
 
-.home-page__grid-count-users__wrapper {
+.home-page__grid-count-users {
     color: var(--color-dark-05)
 }
 

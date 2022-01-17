@@ -115,7 +115,7 @@ input:checked + .switch__slider:before {
 .label__input {
     margin-bottom: var(--margin-sm);
     background-color: var(--color-dark-10);
-    padding: calc(var(--font-size-base) / 3);
+    padding: calc(var(--font-size-base) / 3) calc(var(--font-size-base) / 2);
     border-color: var(--color-dark-02);
     border-style: solid;
     border-radius: var(--border-radius);
@@ -127,6 +127,18 @@ input:checked + .switch__slider:before {
 .label__input:focus {
     border-color: var(--color-dark-05);
     outline: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.label__input__file {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--margin-sm);
 }
 
 .btn {
