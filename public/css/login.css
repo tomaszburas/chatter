@@ -1,26 +1,25 @@
 @import "main.css";
 
-.btn_sign-up {
+.btn__border {
     margin-left: 0;
 }
 
-.btn_sign_in {
-    width: 30%;
-}
-
-.create-account-box {
-    border: 1px solid var(--purple);
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
+.create-account__wrapper {
+    border: 1px solid var(--color-dark-05);
+    border-radius: var(--border-radius);
+    padding: var(--padding-sm) var(--padding-lg);
     width: 30%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-sm);
 }
 
-.btn-sign-in-guess {
-    width: calc(30% + 3rem);
+.create-account__txt--gray {
+    color: var(--color-dark-02);
 }
 
+.create-account__txt--purple {
+    color: var(--color-dark-05);
+}
 
 
 

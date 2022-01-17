@@ -14,5 +14,15 @@ homeRouter
             root: join(__dirname, '../public/html/')
         })
     })
+    .get('/settings', (req, res) => {
+        res.sendFile('settings.html', {
+            root: join(__dirname, '../public/html/')
+        })
+    })
+    .get('*', (req, res) => {
+        res.sendFile('404.html', {
+            root: join(__dirname, '../public/html/')
+        })
+    })
 
 module.exports = homeRouter;

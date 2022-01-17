@@ -1,0 +1,143 @@
+@import "main.css";
+
+html {
+    background:
+            url(../img/home-page-img-dark.svg)
+            center right -10% / 110vh
+            no-repeat
+            fixed
+            var(--color-dark-10)
+}
+
+.main__home-page {
+    height: calc(100vh - var(--header-height) - var(--footer-height) - 2 * var(--padding-lg));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--margin-lg);
+    font-size: var(--font-size-lg);
+    width: 50%;
+}
+
+.title__home-page {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--margin-lg);
+}
+
+.main__home-page__container__center {
+    display: flex;
+    margin-bottom: var(--margin-lg);
+    width: 100%;
+    align-items: center;
+}
+
+.main__home-page__stats {
+    margin-right: var(--margin-xl);
+    padding: var(--padding-sm);
+    border-radius: var(--border-radius);
+    width: 30%;
+    background: var(--gradient-dark-01);
+    display: grid;
+    grid-template-columns: 75% 15%;
+    grid-template-rows: var(--font-size-lg) var(--font-size-lg);
+    gap: 10% 10%;
+}
+
+.stats__title {
+    color: var(--color-dark-05);
+    align-self: center;
+}
+
+.stats__count-users {
+    align-self: center;
+}
+
+.stats__count-channels {
+    align-self: center;
+}
+
+.main__home-page__channels {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.home-page__grid__container{
+    display: grid;
+    grid-template-columns: 80% 15%;
+    grid-template-rows: var(--font-size-lg) var(--font-size-lg) var(--font-size-lg);
+    gap: 10% 5%;
+}
+
+.home-page__grid-name__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.home-page__grid-user-count__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.home-page__grid__user-count {
+    display: flex;
+    align-items: center;
+}
+
+.home-page__grid-no {
+    padding-right: var(--padding-sm);
+}
+
+.home-page__grid-avatar {
+    height: var(--font-size-lg);
+    padding-right: var(--padding-sm);
+}
+
+.home-page__grid-name {
+    padding-right: var(--padding-sm);
+    cursor: pointer;
+}
+
+.home-page__grid-icon {
+    padding-left: calc(var(--padding-sm)/2);
+    color: var(--color-dark-05)
+}
+
+.home-page__grid-count-users {
+    color: var(--color-dark-05)
+}
+
+.home-page__channels__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--margin-base);
+}
+
+.main__home-page__container__bottom {
+    display: flex;
+    justify-content: center;
+    padding: var(--padding-lg);
+    width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    html {
+        background:
+                url(../img/home-page-img-dark.svg)
+                center right -45% / 110vh
+                no-repeat
+                fixed
+                var(--color-dark-10)
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    html {
+        background: var(--color-dark-10);
+    }
+
+    .main__home-page {
+        width: calc(100% - 2 * var(--margin-lg));
+        align-items: center;
+    }
+}
+

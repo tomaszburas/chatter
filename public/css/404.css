@@ -1,0 +1,11 @@
+@import "main.css";
+
+.btn__back-to-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx-chevrons-left {
+    margin-left: var(--margin-sm);
+}

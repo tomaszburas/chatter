@@ -1,9 +1,5 @@
 @import "main.css";
 
-.btn_sign_up {
-    width: 30%;
-}
-
-.btn-sign-in-guess {
-    width: calc(30% + 3rem);
+.right-section__txt--gray {
+    color: var(--color-dark-02);
 }
