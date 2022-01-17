@@ -103,13 +103,6 @@ a {
 button,
 input[type="submit"],
 input[type="reset"] {
-  /*font-family: inherit;*/
-  /*padding: 0;*/
-  /*border: 1px solid;*/
-  /*background: none;*/
-  /*outline: none;*/
-  /*cursor: pointer;*/
-
   background: none;
   color: inherit;
   border: none;
