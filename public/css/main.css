@@ -1,5 +1,6 @@
 @import "root.css";
 
+
 /* ----- HEADER ----- */
 
 .header {
@@ -35,11 +36,13 @@
     position: relative;
     width: var(--switch-width);
     margin-right: var(--margin-base);
+
 }
 
 .switch input {
-    display:none;
+  display: none;
 }
+
 
 .switch__slider {
     background-color: rgba(81, 64, 165, 0.7);
@@ -85,6 +88,7 @@ input:checked + .switch__slider:before {
     border-radius: 1.5rem;
     padding: var(--padding-sm);
     margin-left: var(--margin-sm);
+
 }
 
 /* ----- FOOTER ----- */
@@ -103,9 +107,10 @@ input:checked + .switch__slider:before {
 /* ----- TEMPLATE ----- */
 
 .label {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .label__txt {
     color: var(--color-dark-02);
@@ -184,5 +189,5 @@ input[type="file"] {
 
 .btn__sign-in-guess {
     width: 30%;
-}
 
+}

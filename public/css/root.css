@@ -23,6 +23,9 @@
   --color-dark-11: rgba(255, 255, 255, 0.05);
   --color-dark-12: #c4c4c4;
   --color-dark-13: #af4747;
+  --color-dark-14: #886fac;
+  --color-dark-15: #f0c340;
+  --color-dark-16: rgba(255, 255, 255, 0.15);
 
   --gradient-dark-01: linear-gradient(
     120deg,
@@ -30,12 +33,14 @@
     rgba(81, 64, 165, 0) 100%
   );
 
+  --image-dark-tag: url("../img/tag_black_24dp.svg");
+
   --box-shadow-01: 14px 18px 30px 0px rgba(0, 0, 0, 0.05);
   --box-shadow-02: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   --text-color-01: var(--color-dark-01);
   --text-color-02: var(--color-dark-02);
-  --text-color-02: var(--color-dark-03);
+  --text-color-03: var(--color-dark-03);
 
   --message-color-01: var(--color-dark-04);
   --message-color-02: var(--color-dark-05);
@@ -43,6 +48,12 @@
   --message-color-04: var(--color-dark-07);
   --message-color-05: var(--color-dark-08);
   --message-color-06: var(--color-dark-09);
+
+  --other-color-01: var(--color-dark-10);
+  --other-color-02: var(--color-dark-11);
+  --other-color-03: var(--color-dark-14);
+  --other-color-04: var(--color-dark-15);
+  --other-color-05: var(--color-dark-16);
 
   --gradient-color-01: var(--gradient-dark-01);
 
@@ -60,7 +71,16 @@
   --padding-lg: 2rem;
   --padding-xl: 3rem;
 
+  --layout-padding-base: 5rem;
+
   --margin-sm: 1rem;
+
+  
+
+  --transition-normal: 0.3s ease;
+
+  --image-tag: var(--image-dark-tag);
+
   --margin-base: 1.5rem;
   --margin-lg: 2rem;
   --margin-xl: 3rem;
@@ -74,6 +94,7 @@
   --logo-margin: .7rem;
 
   --border-radius: 1rem;
+
 }
 
 html {

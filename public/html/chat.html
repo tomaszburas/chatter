@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--    Material Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/chat.css" />
+    <title>Chatter</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>chatter - import it later</h1>
+      </header>
+      <section class="chat">
+        <header class="chats-header">
+          <h2 class="title-font">Chats</h2>
+          <menu class="tools-primary">
+            <button class="tools-primary__button">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7204 9.43396H10.0429L9.80274 9.2024C10.6432 8.2247 11.1492 6.9554 11.1492 5.57461C11.1492 2.49571 8.65352 0 5.57461 0C2.49571 0 0 2.49571 0 5.57461C0 8.65352 2.49571 11.1492 5.57461 11.1492C6.9554 11.1492 8.2247 10.6432 9.2024 9.80274L9.43396 10.0429V10.7204L13.7221 15L15 13.7221L10.7204 9.43396ZM5.57461 9.43396C3.43911 9.43396 1.71527 7.71012 1.71527 5.57461C1.71527 3.43911 3.43911 1.71527 5.57461 1.71527C7.71012 1.71527 9.43396 3.43911 9.43396 5.57461C9.43396 7.71012 7.71012 9.43396 5.57461 9.43396Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button class="tools-primary__button">
+              <svg
+                width="18"
+                height="12"
+                viewBox="0 0 18 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 12H6V10H0V12ZM0 0V2H18V0H0ZM0 7H12V5H0V7Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button class="tools-primary__button">
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              class="tools-primary__button tools-primary__button--rounded"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 8.57143H8.57143V15H6.42857V8.57143H0V6.42857H6.42857V0H8.57143V6.42857H15V8.57143Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </menu>
+        </header>
+        <header class="current-chat-header">
+          <h2 class="title-font">C++ Channel</h2>
+        </header>
+        <header class="members-header">
+          <h2 class="title-font">Chat Members</h2>
+          <menu class="tools-primary">
+            <button class="tools-primary__button">
+              <svg
+                width="4"
+                height="16"
+                viewBox="0 0 4 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </menu>
+        </header>
+        <section class="chats-list">
+          <div class="chats-list-type">
+            <h3 class="subtitle-font">Channels</h3>
+            <ul class="channels-list">
+              <li class="channel">
+                <div class="channel__avatar"></div>
+
+                <div class="channel__container channel__container--middle">
+                  <p class="channel__name">Mega Kurs</p>
+                  <p class="channel__last-message">Sandy: Hello</p>
+                </div>
+                <div class="channel__container channel__container--right">
+                  <div>
+                    <p class="channel__participants">27</p>
+                    <button class="channel__fav">
+                      <svg
+                        width="16"
+                        height="15"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="channel__last-time">2m</p>
+                </div>
+              </li>
+              <li class="channel">
+                <div class="channel__avatar"></div>
+                <div class="channel__container channel__container--middle">
+                  <p class="channel__name">Python</p>
+                  <p class="channel__last-message">Sandy: Hello</p>
+                </div>
+                <div class="channel__container channel__container--right">
+                  <div>
+                    <p class="channel__participants">27</p>
+                    <button class="channel__fav">
+                      <svg
+                        width="16"
+                        height="15"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="channel__last-time">2m</p>
+                </div>
+              </li>
+              <li class="channel channel--active">
+                <div class="channel__avatar"></div>
+                <div class="channel__container channel__container--middle">
+                  <p class="channel__name">C++ Channel</p>
+                  <p class="channel__last-message">Sandy: Hello</p>
+                </div>
+                <div class="channel__container channel__container--right">
+                  <div>
+                    <p class="channel__participants">27</p>
+                    <button class="channel__fav">
+                      <svg
+                        width="16"
+                        height="15"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.82609 11.4783L12.6652 15L10.813 9.31304L15.6522 5.86957H9.71739L7.82609 0L5.93478 5.86957H0L4.83913 9.31304L2.98696 15L7.82609 11.4783Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="channel__last-time">2m</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="chats-list-type">
+            <h3 class="subtitle-font">Priv</h3>
+            <ul class="channels-list">
+              <li class="channel">
+                <img
+                  src="https://gravatar.com/avatar/88771c7b8f5994128337d550528df482?s=200&d=robohash&r=x"
+                  alt=""
+                  class="channel__user-avatar"
+                />
+                <div class="channel__container channel__container--middle">
+                  <p class="channel__name">Gary Grey</p>
+                  <p class="channel__last-message">You: Hello</p>
+                </div>
+                <div class="channel__container channel__conteiner--priv">
+                  <p class="channel__last-time">12m</p>
+                </div>
+              </li>
+              <li class="channel">
+                <img
+                  src="https://gravatar.com/avatar/3b817b3e3509e7fdb284749fbc481170?s=200&d=robohash&r=x"
+                  alt=""
+                  class="channel__user-avatar"
+                />
+                <div class="channel__container channel__container--middle">
+                  <p class="channel__name">Jane</p>
+                  <p class="channel__last-message">
+                    Jane: How are you? Lorem ipsum dolor met
+                  </p>
+                </div>
+                <div class="channel__container channel__conteiner--priv">
+                  <p class="channel__last-time">2m</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="members-list">
+          <div class="members-list-type">
+            <h3 class="subtitle-font">Admin</h3>
+            <ul class="members-list__list">
+              <li class="member">
+                <img
+                  src="https://gravatar.com/avatar/e7f418ad2b0900d875c69d4d5d3296a1?s=200&d=robohash&r=x"
+                  alt=""
+                  class="member__avatar"
+                />
+                <p class="member__name">Jordan</p>
+                <menu class="tools-primary">
+                  <button class="tools-primary__button">
+                    <svg
+                      width="4"
+                      height="16"
+                      viewBox="0 0 4 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="tools-primary__button tools-primary__button--rounded tools-primary__button--rounded-lg"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 16L3.2 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM3.2 5.6H12.8V7.2H3.2V5.6ZM9.6 9.6H3.2V8H9.6V9.6ZM12.8 4.8H3.2V3.2H12.8V4.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </menu>
+              </li>
+            </ul>
+          </div>
+          <div class="members-list-type">
+            <h3 class="subtitle-font">Moderators</h3>
+            <ul class="members-list__list">
+              <li class="member">
+                <img
+                  src="https://gravatar.com/avatar/11ad8b4a0a8b0da8766ab286c203b961?s=200&d=robohash&r=x"
+                  alt=""
+                  class="member__avatar"
+                />
+                <p class="member__name">Gary Stevenson</p>
+                <menu class="tools-primary">
+                  <button class="tools-primary__button">
+                    <svg
+                      width="4"
+                      height="16"
+                      viewBox="0 0 4 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="tools-primary__button tools-primary__button--rounded tools-primary__button--rounded-lg"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 16L3.2 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM3.2 5.6H12.8V7.2H3.2V5.6ZM9.6 9.6H3.2V8H9.6V9.6ZM12.8 4.8H3.2V3.2H12.8V4.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </menu>
+              </li>
+              <li class="member">
+                <img
+                  src="https://gravatar.com/avatar/88771c7b8f5994128337d550528df482?s=200&d=robohash&r=x"
+                  alt=""
+                  class="member__avatar"
+                />
+                <p class="member__name">Leia Jane</p>
+                <menu class="tools-primary">
+                  <button class="tools-primary__button">
+                    <svg
+                      width="4"
+                      height="16"
+                      viewBox="0 0 4 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="tools-primary__button tools-primary__button--rounded tools-primary__button--rounded-lg"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 16L3.2 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM3.2 5.6H12.8V7.2H3.2V5.6ZM9.6 9.6H3.2V8H9.6V9.6ZM12.8 4.8H3.2V3.2H12.8V4.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </menu>
+              </li>
+            </ul>
+          </div>
+          <div class="members-list-type">
+            <h3 class="subtitle-font">Members</h3>
+            <ul class="members-list__list">
+              <li class="member">
+                <img
+                  src="https://robohash.org/e7f418ad2b0900d875c69d4d5d3296a1?set=set4&bgset=&size=200x200"
+                  alt=""
+                  class="member__avatar"
+                />
+                <p class="member__name">Sandy</p>
+                <menu class="tools-primary">
+                  <button class="tools-primary__button">
+                    <svg
+                      width="4"
+                      height="16"
+                      viewBox="0 0 4 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="tools-primary__button tools-primary__button--rounded tools-primary__button--rounded-lg"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 16L3.2 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM3.2 5.6H12.8V7.2H3.2V5.6ZM9.6 9.6H3.2V8H9.6V9.6ZM12.8 4.8H3.2V3.2H12.8V4.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </menu>
+              </li>
+              <li class="member">
+                <img
+                  src="https://robohash.org/76855f0fd740f3e092577127fc2e0ffc?set=set4&bgset=&size=200x200"
+                  alt=""
+                  class="member__avatar"
+                />
+                <p class="member__name">ninja</p>
+                <menu class="tools-primary">
+                  <button class="tools-primary__button">
+                    <svg
+                      width="4"
+                      height="16"
+                      viewBox="0 0 4 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="tools-primary__button tools-primary__button--rounded tools-primary__button--rounded-lg"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 16L3.2 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM3.2 5.6H12.8V7.2H3.2V5.6ZM9.6 9.6H3.2V8H9.6V9.6ZM12.8 4.8H3.2V3.2H12.8V4.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </menu>
+              </li>
+              <li class="member">
+                <img
+                  src="https://avatars.dicebear.com/v2/female/d657cb1668c2814318e2988d0cb7c605.svg"
+                  alt=""
+                  class="member__avatar"
+                />
+                <p class="member__name">retrosara</p>
+                <menu class="tools-primary">
+                  <button class="tools-primary__button">
+                    <svg
+                      width="4"
+                      height="16"
+                      viewBox="0 0 4 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="tools-primary__button tools-primary__button--rounded tools-primary__button--rounded-lg"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 16L3.2 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM3.2 5.6H12.8V7.2H3.2V5.6ZM9.6 9.6H3.2V8H9.6V9.6ZM12.8 4.8H3.2V3.2H12.8V4.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </menu>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="current-channel">
+          <header class="current-channel__topic">
+            <p class="current-channel__topic-text">
+              Welcome to the C++ course community channel! You will learn awsome
+              stuff here. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Natus ut reiciendis dolores?
+            </p>
+            <menu class="tools-primary">
+              <button class="tools-primary__button">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 11.0837V14H2.91626L11.5173 5.39897L8.60103 2.48271L0 11.0837ZM13.7725 3.14373C14.0758 2.84044 14.0758 2.35051 13.7725 2.04722L11.9528 0.227468C11.6495 -0.0758228 11.1596 -0.0758228 10.8563 0.227468L9.43313 1.6506L12.3494 4.56687L13.7725 3.14373V3.14373Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <button
+                class="tools-primary__button tools-primary__button-sm current-channel__topic-more-btn"
+              >
+                <svg
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 7.41016L12 1.41016L10.59 0.000156403L6 4.58016L1.41 0.000156403L0 1.41016L6 7.41016Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </menu>
+          </header>
+          <section class="messages">
+            <ul class="messages-list">
+              <li class="message">
+                <img
+                  src="https://gravatar.com/avatar/e7f418ad2b0900d875c69d4d5d3296a1?s=200&d=robohash&r=x"
+                  alt=""
+                  class="message__avatar"
+                />
+                <p class="message__content">Amazing idea!</p>
+              </li>
+            </ul>
+            <ul class="messages-list">
+              <li class="message">
+                <img
+                  src="https://robohash.org/e7f418ad2b0900d875c69d4d5d3296a1?set=set4&bgset=&size=200x200"
+                  alt=""
+                  class="message__avatar"
+                />
+                <p class="message__content">
+                  I'll take the fronend. In general, I like the idea, but you
+                  need to make some minor corrections.
+                </p>
+              </li>
+              <li class="message message--you">
+                <img
+                  src="https://robohash.org/76855f0fd740f3e092577127fc2e0ffc?set=set4&bgset=&size=200x200"
+                  alt=""
+                  class="message__avatar"
+                />
+                <p class="message__content">Lorem ipsum dolor.</p>
+              </li>
+              <li class="message message--you message--no-avatar">
+                <p class="message__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id a
+                  architecto quisquam!
+                </p>
+              </li>
+              <li class="message">
+                <img
+                  src="https://avatars.dicebear.com/v2/female/d657cb1668c2814318e2988d0cb7c605.svg"
+                  alt=""
+                  class="message__avatar"
+                />
+                <p class="message__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+              <li class="message message--no-avatar">
+                <p class="message__content">!</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <form class="message-form">
+          <div class="message-form__container">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="message-form__input"
+              placeholder="Write a message..."
+              required
+            />
+            <menu class="tools-primary">
+              <button class="tools-primary__button" type="button">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9166 8.16675C12.607 8.16675 13.1666 7.6071 13.1666 6.91675C13.1666 6.22639 12.607 5.66675 11.9166 5.66675C11.2263 5.66675 10.6666 6.22639 10.6666 6.91675C10.6666 7.6071 11.2263 8.16675 11.9166 8.16675Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M6.08337 8.16675C6.77373 8.16675 7.33337 7.6071 7.33337 6.91675C7.33337 6.22639 6.77373 5.66675 6.08337 5.66675C5.39302 5.66675 4.83337 6.22639 4.83337 6.91675C4.83337 7.6071 5.39302 8.16675 6.08337 8.16675Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M8.99163 0.666748C4.39163 0.666748 0.666626 4.40008 0.666626 9.00008C0.666626 13.6001 4.39163 17.3334 8.99163 17.3334C13.6 17.3334 17.3333 13.6001 17.3333 9.00008C17.3333 4.40008 13.6 0.666748 8.99163 0.666748ZM8.99996 15.6667C5.31663 15.6667 2.33329 12.6834 2.33329 9.00008C2.33329 5.31675 5.31663 2.33341 8.99996 2.33341C12.6833 2.33341 15.6666 5.31675 15.6666 9.00008C15.6666 12.6834 12.6833 15.6667 8.99996 15.6667ZM4.83329 10.6667C5.48329 12.6167 7.09996 14.0001 8.99996 14.0001C10.9 14.0001 12.5166 12.6167 13.1666 10.6667H4.83329Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <button class="tools-primary__button" type="button">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0C3.58222 0 0 3.58222 0 8C0 12.4178 3.58222 16 8 16C8.73778 16 9.33333 15.4044 9.33333 14.6667C9.33333 14.32 9.2 14.0089 8.98667 13.7689C8.78222 13.5378 8.64889 13.2267 8.64889 12.8889C8.64889 12.1511 9.24444 11.5556 9.98222 11.5556H11.5556C14.0089 11.5556 16 9.56445 16 7.11111C16 3.18222 12.4178 0 8 0ZM3.11111 8C2.37333 8 1.77778 7.40445 1.77778 6.66667C1.77778 5.92889 2.37333 5.33333 3.11111 5.33333C3.84889 5.33333 4.44444 5.92889 4.44444 6.66667C4.44444 7.40445 3.84889 8 3.11111 8ZM5.77778 4.44444C5.04 4.44444 4.44444 3.84889 4.44444 3.11111C4.44444 2.37333 5.04 1.77778 5.77778 1.77778C6.51556 1.77778 7.11111 2.37333 7.11111 3.11111C7.11111 3.84889 6.51556 4.44444 5.77778 4.44444ZM10.2222 4.44444C9.48445 4.44444 8.88889 3.84889 8.88889 3.11111C8.88889 2.37333 9.48445 1.77778 10.2222 1.77778C10.96 1.77778 11.5556 2.37333 11.5556 3.11111C11.5556 3.84889 10.96 4.44444 10.2222 4.44444ZM12.8889 8C12.1511 8 11.5556 7.40445 11.5556 6.66667C11.5556 5.92889 12.1511 5.33333 12.8889 5.33333C13.6267 5.33333 14.2222 5.92889 14.2222 6.66667C14.2222 7.40445 13.6267 8 12.8889 8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </menu>
+          </div>
+          <button
+            class="tools-primary__button message-form__send"
+            type="submit"
+          >
+            <svg
+              width="21"
+              height="18"
+              viewBox="0 0 21 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.00999999 18L21 9L0.00999999 0L0 7L15 9L0 11L0.00999999 18Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="footer__p">© 2022 airm & Tomaszenko</div>
+      </footer>
+    </div>
+  </body>
+</html>
