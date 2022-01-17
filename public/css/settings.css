@@ -14,6 +14,6 @@
     margin-right: var(--margin-sm);
 }
 
-.btn__sign-in-guess--gray {
+.btn__sign-in-guess {
     background-color: var(--color-dark-02)
 }
