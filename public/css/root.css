@@ -44,3 +44,8 @@ ol,
 ul {
   list-style: none;
 }
+
+/* todo: usunąć? */
+.cursor {
+  cursor: pointer;
+}
