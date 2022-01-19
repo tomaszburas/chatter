@@ -1,0 +1,11 @@
+.footer {
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__txt {
+  font-size: var(--font-size-sm);
+  color: var(--color-dark-02);
+}

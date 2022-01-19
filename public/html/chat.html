@@ -29,7 +29,28 @@
   <body>
     <div class="app">
       <header class="header">
-        <h1>chatter - import it later</h1>
+        <a href="/">
+          <button class="header__logo__btn" title="Chatter">
+            <img
+              class="header__logo__img"
+              src="../img/sygnet.svg"
+              alt="Sygnet"
+            />
+            <p class="header__logo__txt">Chatter</p>
+          </button>
+        </a>
+        <div class="header__right-section">
+          <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="switch__slider round"></div>
+          </label>
+          <a href="/login">
+            <button title="Sign in">Sign in</button>
+          </a>
+          <a href="/register">
+            <button class="btn__border" title="Sign up">Sign up</button>
+          </a>
+        </div>
       </header>
       <section class="chat">
         <header class="chats-header">
@@ -399,7 +420,24 @@
         </form>
       </section>
       <footer class="footer">
-        <div class="footer__p">© 2022 airm & Tomaszenko</div>
+        <p class="footer__txt">
+          © 2022
+          <a
+            class="cursor"
+            title="GitHub: airm"
+            href="https://github.com/airfortech"
+            target="_blank"
+            >airm</a
+          >
+          &
+          <a
+            class="cursor"
+            title="GitHub: Tomaszenko"
+            href="https://github.com/tomaszburas"
+            target="_blank"
+            >Tomaszenko</a
+          >
+        </p>
       </footer>
     </div>
   </body>
