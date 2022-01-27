@@ -1,22 +1,18 @@
 {
   "name": "chatter",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Chat app",
+  "main": "app/app.js",
   "scripts": {
-    "devStart": "nodemon app.js"
+    "devStart": "nodemon app/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tomaszburas/chatter.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "airm & Tomaszenko",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tomaszburas/chatter/issues"
-  },
-  "homepage": "https://github.com/tomaszburas/chatter#readme",
   "devDependencies": {
     "dotenv": "^11.0.0",
     "nodemon": "^2.0.15"
