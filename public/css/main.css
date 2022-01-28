@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--padding-lg);
+    padding: var(--padding-base);
     max-width: 1920px;
 }
 

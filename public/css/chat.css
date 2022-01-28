@@ -25,10 +25,13 @@ body {
   justify-content: space-between;
   height: 100vh;
   margin: 0 auto;
+  padding: var(--padding-base);
   /* max-width: 1600px; */
   /* temporary width */
+  width: calc(100% - var(--padding-base) * 2);
   min-width: 1400px;
-  max-width: 1800px;
+  max-width: 1920px;
+  /*max-width: 1800px;*/
   background-color: var(--other-color-01);
 }
 
@@ -38,8 +41,8 @@ body {
   display: flex;
   /* justify-content: left; */
   /* align-items: center; */
-  height: 135px;
-  padding: 0 50px;
+  /*height: 135px;*/
+  /*padding: 0 50px;*/
 }
 
 /* .header h1 {
@@ -51,8 +54,9 @@ body {
   /* display: flex; */
   /* justify-content: right; */
   /* align-items: center; */
-  height: 74px;
-  padding: 0 var(--layout-padding-base);
+  /*height: 74px;*/
+  /*height: var(--footer-height);*/
+  /*padding: 0 var(--layout-padding-base);*/
   /* color: white; */
 }
 

@@ -10,7 +10,7 @@ html {
 }
 
 .main__home-page {
-    height: calc(100vh - var(--header-height) - var(--footer-height) - 2 * var(--padding-lg));
+    height: calc(100vh - var(--header-height) - var(--footer-height) - 2 * var(--padding-base));
     display: flex;
     flex-direction: column;
     justify-content: center;
