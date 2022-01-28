@@ -7,6 +7,10 @@ formSubmit.addEventListener('click', async () => {
     const username = formWrapper.querySelector('input[name="username"]').value;
     const password = formWrapper.querySelector('input[name="password"]').value;
 
+    if (!username && !password) {
+        return alertMessage('Please enter your details', 'negative')
+    }
+
     const res = await fetch('/login', {
         method: 'POST',
         headers: {
