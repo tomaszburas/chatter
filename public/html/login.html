@@ -14,9 +14,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#4d3095">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Chatter - Login</title>
 </head>
@@ -44,17 +43,17 @@
     <main class="container">
         <h1 class="container__title">Sign in to chatter ⚡</h1>
         <div class="container__wrapper">
-            <label class="label">
-                <span class="label__txt">Username</span>
-                <input type="text" name="username" class="label__input">
-            </label>
-            <label class="label">
-                <span class="label__txt">Password</span>
-                <input type="password" name="username" class="label__input">
-            </label>
-            <div class="container__btn">
-                <button class="btn" title="Sign in">Sign in</button>
-            </div>
+                <label class="label">
+                    <span class="label__txt">Username</span>
+                    <input type="text" name="username" class="label__input">
+                </label>
+                <label class="label">
+                    <span class="label__txt">Password</span>
+                    <input type="password" name="password" class="label__input">
+                </label>
+                <div class="container__btn">
+                    <button class="btn" title="Sign in">Sign in</button>
+                </div>
         </div>
         <p class="create-account__wrapper">
             <span class="create-account__txt--gray">New to chatter?</span>
@@ -71,6 +70,8 @@
             <a class="cursor" title="GitHub: Tomaszenko" href="https://github.com/tomaszburas" target="_blank">Tomaszenko</a>
         </p>
     </footer>
+
+    <script type="module" src="../js/login.js"></script>
 </div>
 
 </body>

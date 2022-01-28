@@ -1,0 +1,20 @@
+@import "variables.css";
+
+.alert {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.alert-text-negative {
+    padding: var(--padding-sm);
+    background-color: var(--color-dark-13);
+    border-radius: .5rem;
+}
+
+.alert-text-positive {
+    padding: var(--padding-sm);
+    background-color: var(--color-dark-06);
+    border-radius: .5rem;
+}

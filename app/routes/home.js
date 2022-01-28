@@ -4,7 +4,10 @@ const HomeController = require('../controllers/home-controller')
 const homeRouter = Router();
 
 homeRouter
-    .get('/login', HomeController.login)
-    .get('/register', HomeController.register)
+    .get('/login', HomeController.loginPage)
+    .post('/login', HomeController.loginUser)
+
+    .get('/register', HomeController.registerPage)
+    .post('/register', HomeController.registerUser)
 
 module.exports = homeRouter;
