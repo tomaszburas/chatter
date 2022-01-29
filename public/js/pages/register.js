@@ -1,4 +1,4 @@
-import {alertMessage} from "./utils.js";
+import {alertMsgNegative, alertMsgPositive} from "../components/alert.js";
 
 const formWrapper = document.querySelector('.container__wrapper');
 const formSubmit = formWrapper.querySelector('.btn');
@@ -6,24 +6,28 @@ const formSubmit = formWrapper.querySelector('.btn');
 formSubmit.addEventListener('click', async () => {
     const username = formWrapper.querySelector('input[name="username"]').value;
     const password = formWrapper.querySelector('input[name="password"]').value;
+    const email = formWrapper.querySelector('input[name="email"]').value;
 
-    if (!username && !password) {
-        return alertMessage('Please enter your details', 'negative')
+    if (!username && !password && !email) {
+        return alertMsgNegative('Please enter your details');
     }
 
-    const res = await fetch('/login', {
+    const res = await fetch('/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({username, password})
+        body: JSON.stringify({username, password, email})
     });
 
     if (res.status === 200) {
-        window.location.href = '/app';
+        alertMsgPositive('Thanks for registration')
+        setTimeout(() => {
+            window.location.href = '/login';
+        }, 3000);
     } else {
         const {error} = await res.json();
-        alertMessage(error, 'negative');
+        alertMsgNegative(error);
         formWrapper.querySelector('input[name="password"]').value = '';
     }
 });
