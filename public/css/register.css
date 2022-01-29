@@ -1,5 +1,5 @@
 @import "main.css";
-@import "alert.css";
+@import "components/alert.css";
 
 .right-section__txt--gray {
     color: var(--color-dark-02);

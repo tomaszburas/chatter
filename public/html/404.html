@@ -23,11 +23,20 @@
 </head>
 <body>
 
+<script>
+    (() => {
+        const siteAddress = location.origin + '/404'
+        if (location.href !== siteAddress) {
+            location.href = siteAddress;
+        }
+    })();
+</script>
+
 <div class="wrapper">
     <header class="header">
         <a href="/">
             <button class="header__logo__btn" title="Chatter">
-                <img class="header__logo__img" src="../img/sygnet.svg" alt="Sygnet">
+                <img class="header__logo__img" src="../../img/sygnet.svg" alt="Sygnet">
                 <p class="header__logo__txt">Chatter</p>
             </button>
         </a>

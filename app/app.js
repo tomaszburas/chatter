@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 app.use('/', homeRouter);
 app.use('/app', appRouter);
-app.use(notFoundRouter);
+app.use('*', notFoundRouter);
 
 app.use(handleError);
 

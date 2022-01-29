@@ -1,6 +1,6 @@
 @import "root.css";
-@import "header.css";
-@import "footer.css";
+@import "components/header.css";
+@import "components/footer.css";
 
 body {
   background: #282d47;
@@ -19,7 +19,7 @@ body {
   color: var(--text-color-03);
 }
 
-.app {
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

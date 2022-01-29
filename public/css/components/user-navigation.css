@@ -1,0 +1,27 @@
+@import "../main.css";
+
+.user-navigation__wrapper {
+    background-color: var(--color-dark-05);
+    position: absolute;
+    right: 0;
+    top: calc(var(--header-height) + var(--padding-base));
+    border-radius: var(--border-radius);
+}
+
+.user-navigation__ul {
+    padding: var(--padding-base);
+}
+
+.user-navigation__li:first-child {
+    margin-bottom: var(--margin-sm);
+}
+
+.user-navigation__a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-navigation__txt {
+    padding-left: calc(var(--padding-sm) / 2);
+}

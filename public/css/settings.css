@@ -1,4 +1,5 @@
 @import "main.css";
+@import "./components/user-navigation.css";
 
 .user-avatar__btn {
     display: flex;
