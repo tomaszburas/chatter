@@ -18,7 +18,7 @@ function userNavigation(header) {
 
     let toggle = 0;
     userBtn.addEventListener('click', () => {
-        if (toggle === 0) {
+        if (!toggle) {
             const navigationUser = document.createElement('div');
             navigationUser.classList.add('user-navigation__wrapper');
             navigationUser.innerHTML = html;

@@ -1,5 +1,5 @@
-@import "main.css";
-@import "components/alert.css";
+@import "../main.css";
+@import "../components/alert.css";
 
 .btn__border {
     margin-left: 0;
