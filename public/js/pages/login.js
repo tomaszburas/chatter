@@ -25,5 +25,6 @@ formSubmit.addEventListener('click', async () => {
         const {error} = await res.json();
         alertMsgNegative(error);
         formWrapper.querySelector('input[name="password"]').value = '';
+
     }
 });

@@ -1,8 +1,7 @@
+const jwt = require('jsonwebtoken')
 const {join} = require('path');
 const {UserRecord} = require("../db/records/user.record");
-
-// Baza danych
-const users = [];
+const {ACCESS_TOKEN} = require("../config");
 
 class HomeController {
     loginPage(req, res) {
@@ -14,10 +13,20 @@ class HomeController {
     async loginUser(req, res, next) {
         const {username, password} = req.body;
         try {
-            await UserRecord.login(username, password);
+            const id = await UserRecord.login(username, password);
+
+            const payload = {
+                username,
+                id,
+            }
+            const token = jwt.sign(payload, ACCESS_TOKEN, {expiresIn: "1d"});
             res
                 .status(200)
-                .end()
+                .cookie(`access_token`, `${token}`, {
+                    httpOnly: true,
+                    maxAge: 24 * 60 * 60 * 1000,
+                })
+                .end();
         } catch (e) {
             next(e);
         }

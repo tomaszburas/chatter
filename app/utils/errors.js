@@ -4,7 +4,7 @@ function handleError(err, req, res, next) {
     res
         .status(err instanceof ValidationError ? 400 : 500)
         .json({
-            error: err instanceof ValidationError ? err.message : 'Sorry, please try again later',
+            error: err instanceof ValidationError ? err.message : err.message,
         });
 }
 

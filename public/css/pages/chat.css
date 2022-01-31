@@ -226,7 +226,7 @@ body {
   align-items: flex-end;
 }
 
-.channel__conteiner--priv {
+.channel__container--priv {
   justify-content: end;
 }
 
