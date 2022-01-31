@@ -1,5 +1,3 @@
-// ALL ADD TO header__right-section
-
 function headerMain() {
     return `<label class="switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
@@ -13,28 +11,10 @@ function headerMain() {
             </a>`
 }
 
-function headerSignIn() {
-    return `<label class="switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="switch__slider round"></div>
-            </label>
-            <a href="/register">
-                <button class="btn__border" title="Sign up">Sign up</button>
-            </a>`
-}
-
-function headerSignUp() {
-    return `<label class="switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="switch__slider round"></div>
-            </label>
-            <span class="right-section__txt--gray">Already have an account?</span>
-            <a href="/login">
-                <button class="btn__border" title="Sign in">Sign in</button>
-            </a>`
-}
-
 function headerLogin(avatar, userName) {
+    if (!avatar) {
+        avatar = 'default.png'
+    }
     return `<label class="switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="switch__slider round"></div>
@@ -46,7 +26,5 @@ function headerLogin(avatar, userName) {
 
 export {
     headerMain,
-    headerSignUp,
-    headerSignIn,
     headerLogin,
 }

@@ -1,3 +1,5 @@
+@import "user-navigation.css";
+
 .header {
   height: var(--header-height);
   display: flex;
@@ -82,4 +84,14 @@ input:checked + .switch__slider:before {
   border-radius: 1.5rem;
   padding: var(--padding-sm);
   margin-left: var(--margin-sm);
+}
+
+.user-avatar__btn {
+  display: flex;
+  align-items: center;
+  margin-left: var(--margin-sm);
+}
+
+.user-avatar__img {
+  height: calc(var(--header-height));
 }

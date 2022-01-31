@@ -4,6 +4,10 @@ const {UserRecord} = require("../db/records/user.record");
 const {ACCESS_TOKEN} = require("../config");
 
 class HomeController {
+    checkAuthorization(req, res) {
+        res.json(req.user)
+    }
+
     loginPage(req, res) {
         res.sendFile('login.html', {
             root: join(__dirname, '../../public/html')
@@ -55,6 +59,12 @@ class HomeController {
         } catch (e) {
             next(e);
         }
+    }
+
+    logout(req, res) {
+        res
+            .clearCookie('access_token')
+            .redirect('/login')
     }
 
     notFound(req, res) {

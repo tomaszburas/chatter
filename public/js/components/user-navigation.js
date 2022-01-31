@@ -7,7 +7,7 @@ function userNavigation(header) {
                         </a>
                     </li>         
                     <li class="user-navigation__li">
-                        <a href="/app/logout" class="user-navigation__a" title="Logout">
+                        <a href="/logout" class="user-navigation__a" title="Logout">
                              <i class='bx bx-x-circle'></i>
                              <span class="user-navigation__txt">Logout</span>
                         </a>

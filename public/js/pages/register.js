@@ -21,6 +21,10 @@ formSubmit.addEventListener('click', async () => {
     });
 
     if (res.status === 200) {
+        formWrapper.querySelector('input[name="username"]').value = '';
+        formWrapper.querySelector('input[name="password"]').value = '';
+        formWrapper.querySelector('input[name="email"]').value = '';
+
         alertMsgPositive('Thanks for registration')
         setTimeout(() => {
             window.location.href = '/login';

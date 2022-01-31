@@ -1,7 +1,7 @@
 const {v4:uuid} = require('uuid');
 const bcrypt = require('bcrypt');
 const {ValidationError} = require("../../utils/errors");
-const {validatePassword, validateEmail, checkRegisterData, checkLoginData} = require("../../utils/authorization");
+const {validatePassword, validateEmail, checkRegisterData, checkLoginData} = require("../../utils/authorization-register");
 
 const users = [];
 

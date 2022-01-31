@@ -2,7 +2,6 @@ const {join} = require('path');
 
 class AppController {
     main(req, res) {
-        console.log(req.user);
         res.sendFile('chat.html', {
             root: join(__dirname, '../../public/html')
         })
