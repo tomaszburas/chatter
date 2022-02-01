@@ -13,7 +13,7 @@ function initializeHeader() {
         if (user) {
             headerRightSection.innerHTML = headerLogin(user.avatar, user.username);
             header.appendChild(headerRightSection);
-            userNavigation(header);
+            userNavigation(header, user.id);
         } else {
             headerRightSection.innerHTML = headerMain();
             header.appendChild(headerRightSection);

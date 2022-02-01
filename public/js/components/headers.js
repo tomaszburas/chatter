@@ -20,7 +20,7 @@ function headerLogin(avatar, userName) {
                 <div class="switch__slider round"></div>
             </label>
             <button class="user-avatar__btn" title="${userName}">
-                <img src="../img/avatars/${avatar}" class="user-avatar__img" alt="${userName}">
+                <img src="/img/avatars/${avatar}" class="user-avatar__img" alt="${userName}">
             </button>`
 }
 

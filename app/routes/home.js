@@ -1,11 +1,13 @@
 const {Router} = require('express');
 const HomeController = require('../controllers/home-controller');
-const {checkNotAuth, checkHomePageAuth} = require("../middleware/authorization ");
+const {checkNotAuth, getUser} = require("../middleware/authorization");
 
 const homeRouter = Router();
 
 homeRouter
-    .get('/check-authorization', checkHomePageAuth, HomeController.checkAuthorization)
+    .get('/', HomeController.main)
+
+    .get('/check-authorization', getUser, HomeController.checkAuthorization)
 
     .get('/login', checkNotAuth, HomeController.loginPage)
     .post('/login', HomeController.loginUser)

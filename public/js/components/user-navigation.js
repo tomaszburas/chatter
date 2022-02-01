@@ -1,7 +1,7 @@
-function userNavigation(header) {
+function userNavigation(header, id) {
     const html = `<ul class="user-navigation__ul">
                     <li class="user-navigation__li">
-                        <a href="/app/settings" class="user-navigation__a" title="Settings">
+                        <a href="/app/settings/${id}" class="user-navigation__a" title="Settings">
                             <i class='bx bxs-cog'></i>
                             <span class="user-navigation__txt">Settings</span>
                         </a>

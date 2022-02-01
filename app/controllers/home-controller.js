@@ -8,6 +8,12 @@ class HomeController {
         res.json(req.user)
     }
 
+    main(req, res) {
+        res.sendFile('index.html', {
+            root: join(__dirname, '../../public')
+        })
+    }
+
     loginPage(req, res) {
         res.sendFile('login.html', {
             root: join(__dirname, '../../public/html')
@@ -17,12 +23,15 @@ class HomeController {
     async loginUser(req, res, next) {
         const {username, password} = req.body;
         try {
-            const id = await UserRecord.login(username, password);
+            const {id, avatar, role} = await UserRecord.login(username, password);
 
             const payload = {
                 username,
                 id,
+                avatar,
+                role,
             }
+
             const token = jwt.sign(payload, ACCESS_TOKEN, {expiresIn: "1d"});
             res
                 .status(200)

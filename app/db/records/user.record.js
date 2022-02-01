@@ -46,7 +46,7 @@ class UserRecord {
         const checkPassword = await bcrypt.compare(password, user.password);
         if (!checkPassword) throw new ValidationError('Incorrect password');
 
-        return user.id;
+        return user;
     }
 }
 
